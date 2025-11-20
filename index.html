@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocío Touza Sanchez - Psicóloga Online | Terapia con Enfoque Inclusivo</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Psicóloga online especializada en diversidad, LGTBIQ+, migración y bienestar emocional. Terapia inclusiva y culturalmente sensible en español.">
+    <meta name="keywords" content="psicóloga online, terapia LGTBIQ+, psicóloga inclusiva, terapia diversidad, ansiedad, depresión, migración">
+    <meta name="author" content="Rocío Touza Sanchez">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Rocío Touza Sanchez - Psicóloga Online">
+    <meta property="og:description" content="Terapia psicológica online inclusiva y culturalmente sensible. Especializada en diversidad, LGTBIQ+ y procesos migratorios.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rociotouzasanchez.com">
+    <meta property="og:image" content="https://rociotouzasanchez.com/og-image.jpg">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'verde-agua': '#80CBC4',
+                        'off-white': '#F9F7F3',
+                        'navy': '#1D3557',
+                        'coral': '#FF6F61',
+                        'dark-gray': '#333333'
+                    },
+                    fontFamily: {
+                        'playfair': ['Playfair Display', 'serif'],
+                        'lato': ['Lato', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Psychologist",
+        "name": "Rocío Touza Sanchez",
+        "url": "https://rociotouzasanchez.com",
+        "telephone": "+34-XXX-XXX-XXX",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Barcelona",
+            "addressCountry": "ES"
+        },
+        "priceRange": "€€",
+        "description": "Psicóloga online especializada en terapia inclusiva, diversidad LGTBIQ+ y procesos migratorios.",
+        "areaServed": {
+            "@type": "Country",
+            "name": "España"
+        }
+    }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            padding: 15px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.05);
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #80CBC4;
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-off-white text-dark-gray">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <svg class="w-10 h-10 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+                    </svg>
+                    <div>
+                        <div class="font-playfair text-navy text-lg font-bold leading-tight">Rocío Touza Sanchez</div>
+                        <div class="text-sm text-gray-600">Psicóloga</div>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#inicio" class="nav-link text-navy font-medium" data-es="Inicio" data-en="Home">Inicio</a>
+                    <a href="#sobre-mi" class="nav-link text-navy font-medium" data-es="Sobre mí" data-en="About">Sobre mí</a>
+                    <a href="#servicios" class="nav-link text-navy font-medium" data-es="Servicios" data-en="Services">Servicios</a>
+                    <a href="#terapia-online" class="nav-link text-navy font-medium" data-es="Terapia Online" data-en="Online Therapy">Terapia Online</a>
+                    <a href="#contacto" class="nav-link text-navy font-medium" data-es="Contacto" data-en="Contact">Contacto</a>
+                    
+                    <!-- Language Switcher -->
+                    <button id="langSwitch" class="px-4 py-2 bg-verde-agua text-white rounded-full font-medium hover:bg-opacity-90 transition">
+                        EN
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#inicio" class="block py-2 text-navy" data-es="Inicio" data-en="Home">Inicio</a>
+                <a href="#sobre-mi" class="block py-2 text-navy" data-es="Sobre mí" data-en="About">Sobre mí</a>
+                <a href="#servicios" class="block py-2 text-navy" data-es="Servicios" data-en="Services">Servicios</a>
+                <a href="#terapia-online" class="block py-2 text-navy" data-es="Terapia Online" data-en="Online Therapy">Terapia Online</a>
+                <a href="#contacto" class="block py-2 text-navy" data-es="Contacto" data-en="Contact">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 bg-gradient-to-br from-verde-agua/10 to-off-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-playfair font-bold text-navy mb-6 leading-tight" 
+                        data-es="Un espacio seguro para tu bienestar emocional"
+                        data-en="A safe space for your emotional wellbeing">
+                        Un espacio seguro para tu bienestar emocional
+                    </h1>
+                    <p class="text-xl text-gray-700 mb-8 leading-relaxed"
+                       data-es="Terapia psicológica online inclusiva y culturalmente sensible. Acompaño personas en sus procesos de cambio con calidez, respeto y profesionalidad."
+                       data-en="Inclusive and culturally sensitive online psychological therapy. I accompany people through their change processes with warmth, respect, and professionalism.">
+                        Terapia psicológica online inclusiva y culturalmente sensible. Acompaño personas en sus procesos de cambio con calidez, respeto y profesionalidad.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contacto" class="px-8 py-4 bg-coral text-white rounded-full font-semibold hover:bg-opacity-90 transition shadow-lg"
+                           data-es="Reservar sesión"
+                           data-en="Book a session">
+                            Reservar sesión
+                        </a>
+                        <a href="#sobre-mi" class="px-8 py-4 border-2 border-navy text-navy rounded-full font-semibold hover:bg-navy hover:text-white transition"
+                           data-es="Conocer más"
+                           data-en="Learn more">
+                            Conocer más
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-full max-w-md aspect-square bg-verde-agua/20 rounded-3xl flex items-center justify-center">
+                        <div class="text-center p-8">
+                            <svg class="w-32 h-32 mx-auto mb-4 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z"/>
+                            </svg>
+                            <p class="text-navy font-medium text-lg">[Foto profesional aquí]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="sobre-mi" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-playfair font-bold text-navy mb-12 text-center"
+                data-es="Sobre mí"
+                data-en="About me">
+                Sobre mí
+            </h2>
+            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+                <p data-es="Soy Rocío Touza Sanchez, psicóloga colegiada con formación especializada en terapia inclusiva y atención a la diversidad. Mi enfoque se basa en crear un espacio de confianza donde cada persona pueda explorar sus dificultades sin juicios, respetando su identidad, historia y contexto cultural."
+                   data-en="I'm Rocío Touza Sanchez, a licensed psychologist with specialized training in inclusive therapy and diversity care. My approach is based on creating a space of trust where each person can explore their difficulties without judgment, respecting their identity, history, and cultural context.">
+                    Soy Rocío Touza Sanchez, psicóloga colegiada con formación especializada en terapia inclusiva y atención a la diversidad. Mi enfoque se basa en crear un espacio de confianza donde cada persona pueda explorar sus dificultades sin juicios, respetando su identidad, historia y contexto cultural.
+                </p>
+                <p data-es="Trabajo desde una perspectiva humanista e integradora, adaptando mi acompañamiento a las necesidades únicas de cada persona. Entiendo que las experiencias de vida están atravesadas por múltiples factores: identidad de género, orientación sexual, origen cultural, procesos migratorios y condiciones sociales. Por eso, mi práctica se fundamenta en la escucha activa, el respeto y la sensibilidad cultural."
+                   data-en="I work from a humanistic and integrative perspective, adapting my approach to each person's unique needs. I understand that life experiences are shaped by multiple factors: gender identity, sexual orientation, cultural background, migratory processes, and social conditions. That's why my practice is based on active listening, respect, and cultural sensitivity.">
+                    Trabajo desde una perspectiva humanista e integradora, adaptando mi acompañamiento a las necesidades únicas de cada persona. Entiendo que las experiencias de vida están atravesadas por múltiples factores: identidad de género, orientación sexual, origen cultural, procesos migratorios y condiciones sociales. Por eso, mi práctica se fundamenta en la escucha activa, el respeto y la sensibilidad cultural.
+                </p>
+                <p data-es="Mi compromiso es acompañarte en tu proceso de cambio, brindándote herramientas profesionales para afrontar el malestar emocional y construir el bienestar que mereces."
+                   data-en="My commitment is to accompany you through your change process, providing you with professional tools to face emotional distress and build the wellbeing you deserve.">
+                    Mi compromiso es acompañarte en tu proceso de cambio, brindándote herramientas profesionales para afrontar el malestar emocional y construir el bienestar que mereces.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-off-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-playfair font-bold text-navy mb-6 text-center"
+                data-es="Áreas de especialización"
+                data-en="Areas of specialization">
+                Áreas de especialización
+            </h2>
+            <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto"
+               data-es="Ofrezco acompañamiento psicológico en diversas áreas del bienestar emocional, siempre desde una mirada inclusiva y respetuosa de tu singularidad."
+               data-en="I offer psychological support in various areas of emotional wellbeing, always from an inclusive perspective that respects your uniqueness.">
+                Ofrezco acompañamiento psicológico en diversas áreas del bienestar emocional, siempre desde una mirada inclusiva y respetuosa de tu singularidad.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Service Card Template -->
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Estrés" data-en="Stress">Estrés</h3>
+                    <p class="text-gray-600" data-es="Herramientas para gestionar el estrés laboral, académico y las exigencias del día a día." data-en="Tools to manage work, academic stress, and daily demands.">Herramientas para gestionar el estrés laboral, académico y las exigencias del día a día.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,1L8,5H11V14H13V5H16M18,23H6C4.89,23 4,22.1 4,21V9A2,2 0 0,1 6,7H9V9H6V21H18V9H15V7H18A2,2 0 0,1 20,9V21A2,2 0 0,1 18,23Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Traumas" data-en="Trauma">Traumas</h3>
+                    <p class="text-gray-600" data-es="Procesamiento de experiencias difíciles del pasado que afectan tu presente." data-en="Processing difficult past experiences that affect your present.">Procesamiento de experiencias difíciles del pasado que afectan tu presente.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V19A2,2 0 0,1 20,21H4C2.89,21 2,20.1 2,19V8C2,6.89 2.89,6 4,6H8V4C8,2.89 8.89,2 10,2M14,6V4H10V6H14Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Dificultades en el trabajo" data-en="Work difficulties">Dificultades en el trabajo</h3>
+                    <p class="text-gray-600" data-es="Acompañamiento en conflictos laborales, agotamiento profesional o burnout." data-en="Support with work conflicts, professional exhaustion, or burnout.">Acompañamiento en conflictos laborales, agotamiento profesional o burnout.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,8H13V12H17V14H11V8Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Género" data-en="Gender">Género</h3>
+                    <p class="text-gray-600" data-es="Exploración y acompañamiento en cuestiones de identidad y expresión de género." data-en="Exploration and support with gender identity and expression matters.">Exploración y acompañamiento en cuestiones de identidad y expresión de género.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16,11C17.66,11 18.99,9.66 18.99,8C18.99,6.34 17.66,5 16,5C14.34,5 13,6.34 13,8C13,9.66 14.34,11 16,11M8,11C9.66,11 10.99,9.66 10.99,8C10.99,6.34 9.66,5 8,5C6.34,5 5,6.34 5,8C5,9.66 6.34,11 8,11M8,13C5.67,13 1,14.17 1,16.5V19H15V16.5C15,14.17 10.33,13 8,13M16,13C15.71,13 15.38,13.02 15.03,13.05C16.19,13.89 17,15.02 17,16.5V19H23V16.5C23,14.17 18.33,13 16,13Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Diversidad" data-en="Diversity">Diversidad</h3>
+                    <p class="text-gray-600" data-es="Atención especializada a experiencias de discriminación y minorización." data-en="Specialized care for experiences of discrimination and minoritization.">Atención especializada a experiencias de discriminación y minorización.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="LGTBIQ+" data-en="LGBTIQ+">LGTBIQ+</h3>
+                    <p class="text-gray-600" data-es="Espacio afirmativo para personas LGTBIQ+ y sus procesos de autoconocimiento." data-en="Affirmative space for LGBTIQ+ people and their self-discovery processes.">Espacio afirmativo para personas LGTBIQ+ y sus procesos de autoconocimiento.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Migración" data-en="Migration">Migración</h3>
+                    <p class="text-gray-600" data-es="Apoyo en procesos migratorios, adaptación cultural y sentimientos de desarraigo." data-en="Support through migratory processes, cultural adaptation, and feelings of uprooting.">Apoyo en procesos migratorios, adaptación cultural y sentimientos de desarraigo.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Condiciones sociales" data-en="Social conditions">Condiciones sociales</h3>
+                    <p class="text-gray-600" data-es="Atención al impacto de factores sociales, económicos y estructurales en tu bienestar." data-en="Care for the impact of social, economic, and structural factors on your wellbeing.">Atención al impacto de factores sociales, económicos y estructurales en tu bienestar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Therapy Section -->
+    <section id="terapia-online" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-playfair font-bold text-navy mb-6 text-center"
+                data-es="Terapia online: cómo funciona"
+                data-en="Online therapy: how it works">
+                Terapia online: cómo funciona
+            </h2>
+            <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto"
+               data-es="Las sesiones online ofrecen la misma calidad que las presenciales, con la comodidad de conectar desde donde te sientas seguro."
+               data-en="Online sessions offer the same quality as in-person sessions, with the comfort of connecting from wherever you feel safe.">
+                Las sesiones online ofrecen la misma calidad que las presenciales, con la comodidad de conectar desde donde te sientas seguro.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-verde-agua/10 rounded-2xl p-8">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-verde-agua rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-playfair font-semibold text-navy mb-2" data-es="Duración" data-en="Duration">Duración</h3>
+                            <p class="text-gray-700" data-es="Cada sesión dura 50 minutos, tiempo suficiente para trabajar en profundidad." data-en="Each session lasts 50 minutes, enough time to work in depth.">Cada sesión dura 50 minutos, tiempo suficiente para trabajar en profundidad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-coral/10 rounded-2xl p-8">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-coral rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-playfair font-semibold text-navy mb-2" data-es="Precio" data-en="Price">Precio</h3>
+                            <p class="text-gray-700" data-es="60€ por sesión. Posibilidad de adaptar la frecuencia según tus necesidades." data-en="€60 per session. Possibility to adjust frequency according to your needs.">60€ por sesión. Posibilidad de adaptar la frecuencia según tus necesidades.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-navy/10 rounded-2xl p-8">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17,10.5V7A1,1 0 0,0 16,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16A1,1 0 0,0 17,17V13.5L21,17.5V6.5L17,10.5Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-playfair font-semibold text-navy mb-2" data-es="Plataforma" data-en="Platform">Plataforma</h3>
+                            <p class="text-gray-700" data-es="Sesiones por Google Meet: fácil de usar, segura y sin necesidad de instalar aplicaciones." data-en="Sessions via Google Meet: easy to use, secure, and no need to install apps.">Sesiones por Google Meet: fácil de usar, segura y sin necesidad de instalar aplicaciones.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-verde-agua/10 rounded-2xl p-8">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 bg-verde-agua rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-playfair font-semibold text-navy mb-2" data-es="Cancelaciones" data-en="Cancellations">Cancelaciones</h3>
+                            <p class="text-gray-700" data-es="Se requiere avisar con 24 horas de antelación. De lo contrario, la sesión debe abonarse." data-en="24 hours notice required. Otherwise, the session must be paid for.">Se requiere avisar con 24 horas de antelación. De lo contrario, la sesión debe abonarse.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Placeholder for Doctoralia Widget -->
+            <div class="bg-gray-100 rounded-2xl p-12 text-center border-2 border-dashed border-gray-300">
+                <svg class="w-16 h-16 mx-auto mb-4 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z"/>
+                </svg>
+                <h3 class="text-xl font-playfair font-semibold text-gray-600 mb-2" data-es="Widget de reserva Doctoralia" data-en="Doctoralia booking widget">Widget de reserva Doctoralia</h3>
+                <p class="text-gray-500" data-es="Aquí se integrará el calendario de Doctoralia para reservar citas" data-en="Doctoralia calendar will be integrated here for booking appointments">Aquí se integrará el calendario de Doctoralia para reservar citas</p>
+                <code class="text-sm text-gray-400 mt-4 block">&lt;!-- Insertar código widget Doctoralia aquí --&gt;</code>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-gradient-to-br from-verde-agua/20 to-off-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-playfair font-bold text-navy mb-6 text-center"
+                data-es="Contacto"
+                data-en="Contact">
+                Contacto
+            </h2>
+            <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto"
+               data-es="¿Tienes dudas o quieres iniciar tu proceso terapéutico? Escríbeme y te responderé lo antes posible."
+               data-en="Do you have questions or want to start your therapeutic process? Write to me and I'll respond as soon as possible.">
+                ¿Tienes dudas o quieres iniciar tu proceso terapéutico? Escríbeme y te responderé lo antes posible.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Contact Info -->
+                <div>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-navy mb-1" data-es="Email" data-en="Email">Email</h3>
+                                <a href="mailto:contacto@rociotouzasanchez.com" class="text-verde-agua hover:underline">contacto@rociotouzasanchez.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M16.75,13.96C17.65,13.59 18.37,12.84 18.75,11.9C19.36,10.34 18.84,8.5 17.5,7.5C16.5,6.77 15.25,6.5 14,6.75C13,7 12.25,7.5 11.75,8.25C11.25,9 11,10 11,11C11,12 11.25,13 11.75,13.75C12.25,14.5 13,15 14,15.25C15.25,15.5 16.5,15.22 17.5,14.5C18.84,13.5 19.36,11.66 18.75,10.1C18.37,9.16 17.65,8.41 16.75,8.04M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M7.5,11C8.88,11 10,9.88 10,8.5C10,7.12 8.88,6 7.5,6C6.12,6 5,7.12 5,8.5C5,9.88 6.12,11 7.5,11M6.5,13C5.67,13 5,13.67 5,14.5V16H10V14.5C10,13.67 9.33,13 8.5,13H6.5Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-navy mb-1" data-es="WhatsApp" data-en="WhatsApp">WhatsApp</h3>
+                                <a href="https://wa.me/34XXXXXXXXX" class="text-verde-agua hover:underline">+34 XXX XXX XXX</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-navy mb-1" data-es="Ubicación" data-en="Location">Ubicación</h3>
+                                <p class="text-gray-700" data-es="Barcelona, España (sesiones online)" data-en="Barcelona, Spain (online sessions)">Barcelona, España (sesiones online)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder for Google Maps -->
+                    <div class="mt-8 bg-gray-100 rounded-2xl p-8 text-center border-2 border-dashed border-gray-300">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                        </svg>
+                        <p class="text-sm text-gray-500" data-es="Widget de Google Maps Business" data-en="Google Maps Business Widget">Widget de Google Maps Business</p>
+                        <code class="text-xs text-gray-400 mt-2 block">&lt;!-- Insertar iframe de Google Maps aquí --&gt;</code>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-playfair font-semibold text-navy mb-6" data-es="Envíame un mensaje" data-en="Send me a message">Envíame un mensaje</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-es="Nombre" data-en="Name">Nombre</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verde-agua focus:border-transparent" placeholder="">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-es="Email" data-en="Email">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verde-agua focus:border-transparent" placeholder="">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2" data-es="Mensaje" data-en="Message">Mensaje</label>
+                            <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verde-agua focus:border-transparent" placeholder=""></textarea>
+                        </div>
+                        <button class="w-full px-8 py-4 bg-coral text-white rounded-full font-semibold hover:bg-opacity-90 transition shadow-lg" data-es="Enviar mensaje" data-en="Send message">
+                            Enviar mensaje
+                        </button>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4 text-center" data-es="*Este formulario requiere configuración backend. Mientras tanto, usa email o WhatsApp." data-en="*This form requires backend configuration. Meanwhile, use email or WhatsApp.">
+                        *Este formulario requiere configuración backend. Mientras tanto, usa email o WhatsApp.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="w-8 h-8 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+                        </svg>
+                        <div>
+                            <div class="font-playfair text-lg font-bold">Rocío Touza Sanchez</div>
+                            <div class="text-sm text-gray-300">Psicóloga</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm" data-es="Terapia online inclusiva y culturalmente sensible" data-en="Inclusive and culturally sensitive online therapy">
+                        Terapia online inclusiva y culturalmente sensible
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" data-es="Enlaces rápidos" data-en="Quick links">Enlaces rápidos</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#inicio" class="hover:text-verde-agua transition" data-es="Inicio" data-en="Home">Inicio</a></li>
+                        <li><a href="#sobre-mi" class="hover:text-verde-agua transition" data-es="Sobre mí" data-en="About">Sobre mí</a></li>
+                        <li><a href="#servicios" class="hover:text-verde-agua transition" data-es="Servicios" data-en="Services">Servicios</a></li>
+                        <li><a href="#terapia-online" class="hover:text-verde-agua transition" data-es="Terapia Online" data-en="Online Therapy">Terapia Online</a></li>
+                        <li><a href="#contacto" class="hover:text-verde-agua transition" data-es="Contacto" data-en="Contact">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" data-es="Contacto" data-en="Contact">Contacto</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>contacto@rociotouzasanchez.com</li>
+                        <li>+34 XXX XXX XXX</li>
+                        <li>Barcelona, España</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
+                <p data-es="© 2024 Rocío Touza Sanchez. Todos los derechos reservados. | Psicóloga colegiada núm. XXXXX" data-en="© 2024 Rocío Touza Sanchez. All rights reserved. | Licensed psychologist no. XXXXX">
+                    © 2024 Rocío Touza Sanchez. Todos los derechos reservados. | Psicóloga colegiada núm. XXXXX
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/34XXXXXXXXX" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span class="hidden md:inline" data-es="Escríbeme" data-en="Write me">Escríbeme</span>
+    </a>
+
+    <script>
+        // Language Switcher
+        let currentLang = 'es';
+        const langSwitch = document.getElementById('langSwitch');
+        
+        langSwitch.addEventListener('click', function() {
+            currentLang = currentLang === 'es' ? 'en' : 'es';
+            langSwitch.textContent = currentLang === 'es' ? 'EN' : 'ES';
+            
+            // Update all elements with data-es and data-en attributes
+            document.querySelectorAll('[data-es][data-en]').forEach(element => {
+                if (currentLang === 'es') {
+                    element.textContent = element.getAttribute('data-es');
+                } else {
+                    element.textContent = element.getAttribute('data-en');
+                }
+            });
+            
+            // Update HTML lang attribute
+            document.documentElement.lang = currentLang;
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll offset for fixed nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Google Analytics Placeholder
+        // window.dataLayer = window.dataLayer || [];
+        // function gtag(){dataLayer.push(arguments);}
+        // gtag('js', new Date());
+        // gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+
+    <!-- Google Analytics - Uncomment and add your GA4 ID -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    -->
+</body>
+</html>2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Malestar emocional" data-en="Emotional distress">Malestar emocional</h3>
+                    <p class="text-gray-600" data-es="Acompañamiento en momentos de confusión, tristeza o agobio emocional difícil de nombrar." data-en="Support during moments of confusion, sadness, or overwhelming emotions that are hard to name.">Acompañamiento en momentos de confusión, tristeza o agobio emocional difícil de nombrar.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2L1,21H23M12,6L19.53,19H4.47M11,10V14H13V10M11,16V18H13V16"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Ansiedad" data-en="Anxiety">Ansiedad</h3>
+                    <p class="text-gray-600" data-es="Manejo de preocupaciones constantes, ataques de pánico y síntomas físicos de la ansiedad." data-en="Management of constant worries, panic attacks, and physical symptoms of anxiety.">Manejo de preocupaciones constantes, ataques de pánico y síntomas físicos de la ansiedad.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Depresión" data-en="Depression">Depresión</h3>
+                    <p class="text-gray-600" data-es="Apoyo en momentos de tristeza profunda, pérdida de interés y falta de energía vital." data-en="Support during periods of deep sadness, loss of interest, and lack of vital energy.">Apoyo en momentos de tristeza profunda, pérdida de interés y falta de energía vital.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Duelos" data-en="Grief">Duelos</h3>
+                    <p class="text-gray-600" data-es="Procesamiento de pérdidas significativas: seres queridos, relaciones, proyectos de vida." data-en="Processing significant losses: loved ones, relationships, life projects.">Procesamiento de pérdidas significativas: seres queridos, relaciones, proyectos de vida.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,6H13V14H11V6M12,15.5A1.5,1.5 0 0,1 13.5,17A1.5,1.5 0 0,1 12,18.5A1.5,1.5 0 0,1 10.5,17A1.5,1.5 0 0,1 12,15.5Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Crisis vitales" data-en="Life crises">Crisis vitales</h3>
+                    <p class="text-gray-600" data-es="Orientación en transiciones importantes y momentos de cambio vital significativo." data-en="Guidance through important transitions and moments of significant life change.">Orientación en transiciones importantes y momentos de cambio vital significativo.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2C14.74,2 17.32,3 19.37,4.79L17.28,6.88C15.85,5.68 14,5 12,5C7.58,5 4,8.58 4,13C4,17.42 7.58,21 12,21C15.21,21 18,19.13 19.35,16.43L21.6,17.6C19.87,21.07 16.21,23.5 12,23.5C6.2,23.5 1.5,18.8 1.5,13C1.5,7.2 6.2,2.5 12,2.5L12,2Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Miedos" data-en="Fears">Miedos</h3>
+                    <p class="text-gray-600" data-es="Trabajo con fobias, miedos paralizantes y preocupaciones que limitan tu día a día." data-en="Working with phobias, paralyzing fears, and worries that limit your daily life.">Trabajo con fobias, miedos paralizantes y preocupaciones que limitan tu día a día.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Dificultades en la pareja" data-en="Relationship difficulties">Dificultades en la pareja</h3>
+                    <p class="text-gray-600" data-es="Apoyo individual ante conflictos de pareja, desgaste o dudas sobre la relación." data-en="Individual support facing couple conflicts, relationship wear, or doubts about the relationship.">Apoyo individual ante conflictos de pareja, desgaste o dudas sobre la relación.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-2xl p-6 shadow-md">
+                    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-playfair font-semibold text-navy mb-3" data-es="Sexualidad" data-en="Sexuality">Sexualidad</h3>
+                    <p class="text-gray-600" data-es="Exploración de dificultades sexuales, dudas sobre orientación o identidad sexual." data-en="Exploration of sexual difficulties, questions about orientation or sexual identity.">Exploración de dificultades sexuales, dudas sobre orientación o identidad sexual.</p>
+                </div>
+
+                <div class="service-card bg-white rounded-
