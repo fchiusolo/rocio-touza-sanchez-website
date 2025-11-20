@@ -1,0 +1,13 @@
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Backup files
+*.bak
+*~
