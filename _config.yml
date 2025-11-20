@@ -1,0 +1,17 @@
+# GitHub Pages Configuration
+title: Rocío Touza Sanchez - Psicóloga
+description: Terapia psicológica online inclusiva y culturalmente sensible
+lang: es
+baseurl: ""
+url: "https://rociotouzasanchez.com"
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
