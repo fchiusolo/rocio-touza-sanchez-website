@@ -149,19 +149,12 @@
                     </a>
                 </div>
 
-                <!-- Mobile CTA + Menu Button -->
-                <div class="flex items-center gap-2 md:hidden">
-                    <a href="https://wa.me/34633779016" target="_blank" class="px-4 py-2 bg-coral text-white rounded-full font-semibold text-sm shadow-md"
-                       data-es="Reservar"
-                       data-en="Book">
-                        Reservar
-                    </a>
-                    <button id="mobileMenuBtn" class="p-2">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
         </div>
         
@@ -173,6 +166,18 @@
                 <a href="#servicios" class="block py-2 text-navy" data-es="Servicios" data-en="Services">Servicios</a>
                 <a href="#terapia-online" class="block py-2 text-navy" data-es="Terapia Online" data-en="Online Therapy">Terapia Online</a>
                 <a href="#contacto" class="block py-2 text-navy" data-es="Contacto" data-en="Contact">Contacto</a>
+
+                <!-- Mobile Language Switcher & CTA -->
+                <div class="pt-4 border-t border-gray-200 flex items-center gap-3">
+                    <button id="mobileLangSwitch" class="px-4 py-2 bg-verde-agua text-white rounded-full font-medium text-sm">
+                        EN
+                    </button>
+                    <a href="https://wa.me/34633779016" target="_blank" class="flex-1 text-center px-4 py-2 bg-coral text-white rounded-full font-semibold text-sm shadow-md"
+                       data-es="Reservar sesión"
+                       data-en="Book session">
+                        Reservar sesión
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -691,11 +696,14 @@
         // Language Switcher
         let currentLang = 'es';
         const langSwitch = document.getElementById('langSwitch');
-        
-        langSwitch.addEventListener('click', function() {
+        const mobileLangSwitch = document.getElementById('mobileLangSwitch');
+
+        function switchLanguage() {
             currentLang = currentLang === 'es' ? 'en' : 'es';
-            langSwitch.textContent = currentLang === 'es' ? 'EN' : 'ES';
-            
+            const buttonText = currentLang === 'es' ? 'EN' : 'ES';
+            langSwitch.textContent = buttonText;
+            mobileLangSwitch.textContent = buttonText;
+
             // Update all elements with data-es and data-en attributes
             document.querySelectorAll('[data-es][data-en]').forEach(element => {
                 if (currentLang === 'es') {
@@ -704,10 +712,13 @@
                     element.textContent = element.getAttribute('data-en');
                 }
             });
-            
+
             // Update HTML lang attribute
             document.documentElement.lang = currentLang;
-        });
+        }
+
+        langSwitch.addEventListener('click', switchLanguage);
+        mobileLangSwitch.addEventListener('click', switchLanguage);
 
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
