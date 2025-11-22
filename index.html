@@ -31,18 +31,15 @@
                         'dark-gray': '#333333'
                     },
                     fontFamily: {
-                        'playfair': ['Playfair Display', 'serif'],
-                        'lato': ['Lato', 'sans-serif']
+                        'playfair': ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
+                        'lato': ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif']
                     }
                 }
             }
         }
     </script>
     
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- System Fonts (Cookie-free alternative to Google Fonts) -->
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -69,10 +66,10 @@
     
     <style>
         body {
-            font-family: 'Lato', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         }
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Playfair Display', serif;
+            font-family: Georgia, Cambria, 'Times New Roman', serif;
         }
         .booking-float {
             position: fixed;
@@ -505,40 +502,48 @@
                 Reserva tu sesión
             </h2>
             <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto"
-               data-es="Elige el día y hora que mejor te funcione. Recibirás un email de confirmación con el enlace de Google Meet."
-               data-en="Choose the day and time that works best for you. You'll receive a confirmation email with the Google Meet link.">
-                Elige el día y hora que mejor te funcione. Recibirás un email de confirmación con el enlace de Google Meet.
+               data-es="Contáctame directamente por WhatsApp o email para reservar tu sesión. Te responderé lo antes posible para coordinar día y hora."
+               data-en="Contact me directly via WhatsApp or email to book your session. I'll respond as soon as possible to coordinate date and time.">
+                Contáctame directamente por WhatsApp o email para reservar tu sesión. Te responderé lo antes posible para coordinar día y hora.
             </p>
 
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/rociotouzasanchez/30min?hide_event_type_details=1"
-                style="min-width:320px;height:710px;;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-            <!-- Calendly inline widget end -->
+            <!-- Direct Contact Booking (Cookie-Free) -->
+            <div class="bg-white rounded-2xl shadow-lg p-12 mb-12 text-center">
+                <div class="max-w-2xl mx-auto">
 
-            <!-- Alternative Contact Options -->
-            <div class="text-center">
-                <p class="text-gray-600 mb-6 text-lg"
-                   data-es="¿Prefieres contactar antes de reservar?"
-                   data-en="Prefer to contact before booking?">
-                    ¿Prefieres contactar antes de reservar?
-                </p>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <a href="https://wa.me/34633779016?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20terapia%20online.%20%C2%BFPodr%C3%ADas%20ayudarme%3F"
-                       target="_blank"
-                       class="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] text-white rounded-full font-semibold hover:opacity-90 transition shadow-lg">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                        </svg>
-                        <span>WhatsApp</span>
-                    </a>
-                    <a href="mailto:info@rociotouzasanchez.com"
-                       class="inline-flex items-center gap-3 px-8 py-4 bg-navy text-white rounded-full font-semibold hover:bg-opacity-90 transition shadow-lg">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
-                        </svg>
-                        <span>Email</span>
-                    </a>
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/34633779016?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20terapia%20online.%20%C2%BFPodr%C3%ADas%20ayudarme%3F"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="flex flex-col items-center gap-4 p-8 bg-gradient-to-br from-[#25D366]/10 to-[#25D366]/5 rounded-2xl border-2 border-[#25D366]/20 hover:border-[#25D366] hover:shadow-lg transition">
+                            <div class="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-2" data-es="WhatsApp" data-en="WhatsApp">WhatsApp</h4>
+                                <p class="text-gray-600 mb-3" data-es="Respuesta rápida y directa" data-en="Fast and direct response">Respuesta rápida y directa</p>
+                                <span class="inline-block px-4 py-2 bg-[#25D366] text-white rounded-full font-semibold" data-es="Enviar mensaje" data-en="Send message">Enviar mensaje</span>
+                            </div>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:info@rociotouzasanchez.com?subject=Consulta%20sobre%20terapia%20online&body=Hola%20Roc%C3%ADo%2C%0A%0AMe%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20terapia%20online.%0A%0AGracias."
+                           class="flex flex-col items-center gap-4 p-8 bg-gradient-to-br from-navy/10 to-navy/5 rounded-2xl border-2 border-navy/20 hover:border-navy hover:shadow-lg transition">
+                            <div class="w-16 h-16 bg-navy rounded-full flex items-center justify-center">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-2" data-es="Email" data-en="Email">Email</h4>
+                                <p class="text-gray-600 mb-3" data-es="info@rociotouzasanchez.com" data-en="info@rociotouzasanchez.com">info@rociotouzasanchez.com</p>
+                                <span class="inline-block px-4 py-2 bg-navy text-white rounded-full font-semibold" data-es="Enviar email" data-en="Send email">Enviar email</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -547,7 +552,7 @@
     <!-- Footer -->
     <footer class="bg-navy text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
                     <div class="flex items-center gap-3 mb-4">
                         <svg class="w-8 h-8 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
@@ -583,26 +588,15 @@
                         <li>Barcelona, España</li>
                     </ul>
                 </div>
-
-                <div>
-                    <h4 class="font-semibold mb-4" data-es="Ubicación" data-en="Location">Ubicación</h4>
-                    <!-- Square map for SEO -->
-                    <div class="rounded-lg overflow-hidden aspect-square">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.6251048681183!2d2.170372076676698!3d41.40394729496689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a308a6f9da81%3A0x47e0e0809ddf631a!2zUHNpY8OzbG9nYSBSb2PDrW8gVG91emEgU8OhbmNoZXo!5e0!3m2!1sit!2ses!4v1763681273163!5m2!1sit!2ses"
-                                width="100%"
-                                height="100%"
-                                style="border:0;"
-                                allowfullscreen=""
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"
-                                title="Psicóloga Rocío Touza Sánchez - Barcelona">
-                        </iframe>
-                    </div>
-                </div>
             </div>
 
             <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
-                <p data-es="© 2024 Rocío Touza Sanchez. Todos los derechos reservados. | Psicóloga colegiada núm. 33914" data-en="© 2024 Rocío Touza Sanchez. All rights reserved. | Licensed psychologist no. XXXXX">
+                <p class="mb-3">
+                    <a href="politica-privacidad.html" class="hover:text-verde-agua transition" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</a>
+                    <span class="mx-2">|</span>
+                    <a href="privacy-policy.html" class="hover:text-verde-agua transition">Privacy Policy (EN)</a>
+                </p>
+                <p data-es="© 2024 Rocío Touza Sanchez. Todos los derechos reservados. | Psicóloga colegiada núm. 33914" data-en="© 2024 Rocío Touza Sanchez. All rights reserved. | Licensed psychologist no. 33914">
                     © 2024 Rocío Touza Sanchez. Todos los derechos reservados. | Psicóloga colegiada núm. 33914
                 </p>
             </div>
@@ -669,16 +663,6 @@
             });
         });
 
-        // Google Analytics Placeholder
-        // window.dataLayer = window.dataLayer || [];
-        // function gtag(){dataLayer.push(arguments);}
-        // gtag('js', new Date());
-        // gtag('config', 'GA_MEASUREMENT_ID');
     </script>
-
-    <!-- Google Analytics - Uncomment and add your GA4 ID -->
-    <!--
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    -->
 </body>
 </html>
