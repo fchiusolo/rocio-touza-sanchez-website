@@ -20,36 +20,42 @@ This is a **professional bilingual website** for psychologist **Rocío Touza San
 | **Tailwind CSS** | Styling | CDN-based v3.x with custom config |
 | **Vanilla JavaScript** | Interactivity | Language switcher, mobile menu, smooth scrolling |
 | **Jekyll** | Static site generation | GitHub Pages integration (minimal config) |
-| **Google Fonts** | Typography | Playfair Display (headings) + Lato (body) |
+| **Open Sans Variable Font** | Typography | Self-hosted variable font (weights 300-800) |
 
 ### Why This Stack?
 - **Zero build process**: No npm, webpack, or bundlers required
 - **Fast deployment**: Push to GitHub = instant updates
 - **Low maintenance**: No dependencies to update
 - **SEO-friendly**: Static HTML with proper meta tags
-- **CDN-optimized**: Tailwind and fonts load from CDN
+- **Privacy-first**: Self-hosted fonts, no external tracking
+- **CDN-optimized**: Tailwind loads from CDN (fonts are local)
 
 ---
 
 ## File Structure
 
 ```
-├── index.html          # Main website (single-page app with all sections)
-├── _config.yml         # Jekyll/GitHub Pages configuration
-├── sitemap.xml         # SEO sitemap for search engines
-├── robots.txt          # Search engine crawling rules
-├── CNAME               # Custom domain configuration (rociotouzasanchez.com)
-├── .gitignore          # Git ignore patterns (.DS_Store, editor files, etc.)
-├── README.md           # Project documentation for developers
-└── CLAUDE.md           # This file - AI assistant guide
+├── index.html                  # Main website (single-page app with all sections)
+├── privacy-policy.html         # English privacy policy page
+├── politica-privacidad.html    # Spanish privacy policy page
+├── _config.yml                 # Jekyll/GitHub Pages configuration
+├── sitemap.xml                 # SEO sitemap for search engines
+├── robots.txt                  # Search engine crawling rules
+├── CNAME                       # Custom domain configuration (rociotouzasanchez.com)
+├── .gitignore                  # Git ignore patterns (.DS_Store, editor files, etc.)
+├── README.md                   # Project documentation for developers
+├── ROADMAP.md                  # Project roadmap and improvement plan
+├── CLAUDE.md                   # This file - AI assistant guide
+├── /fonts/                     # Self-hosted font files (privacy-first)
+│   ├── OpenSans-VariableFont_wdth,wght.ttf
+│   └── OpenSans-Italic-VariableFont_wdth,wght.ttf
+└── /images/                    # Image assets
+    ├── logo.png                # Professional logo
+    └── portrait.jpeg           # Professional portrait photo
 ```
 
-### Missing Files (Placeholders in Code)
-- `og-image.jpg` - Social media preview image (1200x630px recommended)
-- `rocio-portrait.jpg` - Professional portrait photo
-- **Doctoralia widget** - Calendar booking integration (placeholder in HTML)
-- **Google Maps widget** - Location map (placeholder in HTML)
-- **Contact form backend** - Form submission handler (currently non-functional)
+### Missing Files
+- `og-image.jpg` - Social media preview image (1200x630px recommended) - still needed for Open Graph tags
 
 ---
 
@@ -59,11 +65,13 @@ This is a **professional bilingual website** for psychologist **Rocío Touza San
 
 The website is organized into **5 main sections**, all in `index.html`:
 
-1. **Hero Section** (`#inicio`) - Welcome message with CTA buttons
-2. **About Section** (`#sobre-mi`) - Psychologist bio and approach
-3. **Services Section** (`#servicios`) - 15 specialization areas with cards
-4. **Online Therapy Section** (`#terapia-online`) - Session details, pricing, booking
-5. **Contact Section** (`#contacto`) - Contact info, form, map placeholder
+1. **Hero Section** (`#inicio`) - Welcome message with CTA buttons and session info
+2. **About Section** (`#sobre-mi`) - Psychologist bio, credentials, and therapeutic approach
+3. **Services Section** (`#servicios`) - Specialization areas with detailed service cards
+4. **Online Therapy Section** (`#terapia-online`) - Session details, pricing, platform info
+5. **FAQ Section** (`#faq`) - Frequently asked questions (12 common questions)
+
+**Note**: Contact information appears in the footer, not as a separate section. The contact form was intentionally removed in favor of direct WhatsApp booking to reduce friction in the user journey.
 
 ### Navigation System
 - **Fixed top navigation** with smooth scroll offset (80px for nav height)
@@ -79,19 +87,22 @@ The website is organized into **5 main sections**, all in `index.html`:
 
 ```javascript
 colors: {
-  'verde-agua': '#80CBC4',    // Primary brand color (teal/aqua)
-  'off-white': '#F9F7F3',     // Background color (warm white)
-  'navy': '#1D3557',          // Dark blue for text/headings
-  'coral': '#FF6F61',         // Accent color for CTAs
+  'forest-green': '#4D7C6A',  // Primary brand color (buttons, hover states, accent)
+  'cream': '#F5F3E5',         // Background color (warm, neutral base)
+  'navy': '#1D3557',          // Dark blue for text and headings
+  'sage': '#93ADA1',          // Secondary accent color (subtle highlights)
   'dark-gray': '#333333'      // Body text color
 }
 ```
 
 ### Typography
 
-- **Headings**: `font-playfair` (Playfair Display - serif, elegant)
-- **Body Text**: `font-lato` (Lato - sans-serif, readable)
-- **Font Weights**: 300 (light), 400 (regular), 600 (semibold), 700 (bold)
+- **All Text**: Open Sans Variable Font (self-hosted from `/fonts/` directory)
+- **Font Classes**: `font-playfair`, `font-open-sans`, and `font-sans` all map to Open Sans
+- **Font Weights**: Variable font supports 300-800 (light to extra bold)
+- **Font Styles**: Both regular and italic variants available
+- **Fallback Stack**: `-apple-system`, `BlinkMacSystemFont`, `Segoe UI`, `Roboto`, `Helvetica`, `Arial`, `sans-serif`
+- **Privacy**: Self-hosted (no Google Fonts CDN) to avoid external tracking
 
 ### Spacing & Layout
 - **Container**: `max-w-7xl mx-auto` (1280px max width, centered)
@@ -112,9 +123,10 @@ colors: {
 - Icon: Circular colored background with SVG
 
 #### Buttons
-- **Primary CTA**: `bg-coral text-white rounded-full` (coral button)
+- **Primary CTA**: `bg-forest-green text-white rounded-full` (forest green button)
 - **Secondary**: `border-2 border-navy text-navy rounded-full` (outline)
-- **WhatsApp Float**: Fixed bottom-right floating button
+- **WhatsApp Float**: Fixed bottom-right floating button with forest green background
+- **Hover States**: Buttons use `hover:bg-opacity-90` or `transform: scale(1.05)` for interaction feedback
 
 ---
 
@@ -219,8 +231,8 @@ Services are in the `#servicios` section (index.html:232-329). To add a new serv
 
 ```html
 <div class="service-card bg-white rounded-2xl p-6 shadow-md">
-    <div class="w-12 h-12 bg-verde-agua/20 rounded-full flex items-center justify-center mb-4">
-        <svg class="w-6 h-6 text-verde-agua" fill="currentColor" viewBox="0 0 24 24">
+    <div class="w-12 h-12 bg-forest-green/20 rounded-full flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
             <!-- Icon path from Material Design Icons -->
         </svg>
     </div>
@@ -259,15 +271,19 @@ Before committing changes:
 
 ### Branch Naming Convention
 
-This project uses **Claude-specific branch naming**:
+This project uses **descriptive branch naming**:
 
 ```
-claude/claude-md-{random-id}-{session-id}
+claude/{descriptive-name}
 ```
 
-**Example**: `claude/claude-md-mi7zlteavcbnttfn-012zoyx7dANMojFXEBsGBHrT`
+**Examples**:
+- `claude/add-roadmap`
+- `claude/ux-improvements-reduce-friction`
+- `claude/remove-contact-form`
+- `claude/update-color-palette`
 
-**Important**: Branch names MUST start with `claude/` and end with the session ID, or pushes will fail with 403 error.
+**Important**: Branch names MUST start with `claude/` to maintain consistency and enable proper access controls.
 
 ### Commit Message Guidelines
 
@@ -288,88 +304,80 @@ git commit -m "changes"
 
 ### Deployment Process
 
-1. **Make changes** on your feature branch
-2. **Test locally** (open index.html in browser)
-3. **Commit changes**:
+1. **Create feature branch** from main:
+   ```bash
+   git checkout main
+   git pull origin main
+   git checkout -b claude/descriptive-name
+   ```
+
+2. **Make changes** on your feature branch
+
+3. **Test locally** (open index.html in browser)
+
+4. **Commit changes**:
    ```bash
    git add .
    git commit -m "Descriptive message"
    ```
-4. **Push to remote**:
+
+5. **Push to remote**:
    ```bash
    git push -u origin claude/your-branch-name
    ```
-5. **GitHub Pages** automatically deploys from the main branch
-6. **Merge to main** when ready for production
 
-**Note**: Direct pushes to main may be restricted. Use pull requests for production deployments.
+6. **Create Pull Request** (see PR creation section below)
+
+7. **Wait for approval** - Main branch is protected, requires PR approval
+
+8. **After merge** - GitHub Pages automatically deploys from main branch
+
+**IMPORTANT**:
+- ⛔ **Main branch is PROTECTED** - Direct pushes are blocked
+- ✅ **All changes require Pull Requests** with approval
+- ✅ **Always work on feature branches** starting with `claude/`
 
 ---
 
-## Integrations (To Be Configured)
+## Integrations
 
-### 1. WhatsApp Integration
+### ✅ WhatsApp Integration (CONFIGURED)
 
-**Current Status**: Placeholder phone number (`+34XXXXXXXXX`)
+**Status**: Fully integrated and functional
 
-**To Configure**:
-1. Replace all instances of `34XXXXXXXXX` with actual phone number
-2. Format: `34` (country code) + `9-digit phone number` (no spaces/dashes)
-3. Locations to update:
-   - index.html:453 (contact section link)
-   - index.html:557 (floating button)
-   - index.html:542 (footer contact info)
+**Implementation**:
+- Direct WhatsApp booking links throughout the site
+- Floating WhatsApp button (bottom-right, fixed position)
+- Pre-filled message templates for user convenience
+- Mobile-optimized with responsive design
 
-### 2. Doctoralia Calendar Widget
+**Link Format**: `https://wa.me/[COUNTRY_CODE][PHONE_NUMBER]?text=[MESSAGE]`
 
-**Current Status**: Placeholder box (index.html:404-411)
+**Locations**:
+- Navigation bar "Reservar" button
+- Hero section CTA buttons
+- Floating action button
+- Footer contact section
 
-**To Configure**:
-1. Get widget code from Doctoralia account
-2. Replace placeholder `<div>` with actual `<iframe>` or embed code
-3. Test booking flow thoroughly
+**UX Decision**: WhatsApp-only booking was chosen to minimize friction. Contact forms were intentionally removed to streamline the user journey directly to conversation.
 
-### 3. Google Maps Integration
+### ❌ Google Analytics (NOT IMPLEMENTED)
 
-**Current Status**: Placeholder box (index.html:471-477)
+**Status**: Intentionally not using analytics
 
-**To Configure**:
-1. Get embed code from Google Maps
-2. Search for business location in Google Maps
-3. Click "Share" → "Embed a map" → Copy HTML
-4. Replace placeholder with `<iframe>` code
+**Reason**: Privacy-first approach. The website uses NO tracking, cookies, or analytics to respect user privacy and comply with GDPR/LOPD without requiring cookie consent banners.
 
-### 4. Contact Form Backend
+**Alternative**: For traffic insights, use server logs or privacy-respecting alternatives if needed (e.g., Plausible Analytics, self-hosted Matomo).
 
-**Current Status**: Non-functional form (index.html:481-503)
+### 📄 Privacy Policy Pages (IMPLEMENTED)
 
-**Options for Implementation**:
+**Status**: Fully implemented
 
-**Option A: Formspree** (Easiest)
-```html
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-```
+**Files**:
+- `/privacy-policy.html` - English version
+- `/politica-privacidad.html` - Spanish version
 
-**Option B: Netlify Forms**
-```html
-<form name="contact" method="POST" data-netlify="true">
-```
-
-**Option C: Custom Backend**
-- Create serverless function (Netlify Functions, Vercel, AWS Lambda)
-- Handle POST request, validate, send email
-- Add CSRF protection
-
-### 5. Google Analytics
-
-**Current Status**: Commented out (index.html:616-626)
-
-**To Configure**:
-1. Create GA4 property at https://analytics.google.com
-2. Get Measurement ID (format: `G-XXXXXXXXXX`)
-3. Uncomment lines 624-626
-4. Replace `GA_MEASUREMENT_ID` with your actual ID
-5. Uncomment gtag config in lines 617-620
+**Content**: Details data handling, user rights under GDPR/LOPD, and confirms cookie-free browsing experience.
 
 ---
 
@@ -380,14 +388,16 @@ git commit -m "changes"
 - ✅ Semantic HTML5 structure
 - ✅ Meta description and keywords
 - ✅ Open Graph tags for social sharing
-- ✅ JSON-LD structured data (Schema.org)
+- ✅ JSON-LD structured data (Schema.org Psychologist type)
 - ✅ Sitemap.xml with proper priorities
 - ✅ Robots.txt allowing all crawlers
 - ✅ Mobile-responsive design
-- ✅ Fast loading (CDN assets, minimal JS)
+- ✅ Fast loading (self-hosted fonts, minimal JS)
 - ✅ Proper heading hierarchy (H1 → H2 → H3)
-- ✅ Alt text placeholders for images
+- ✅ Alt text for images
 - ✅ Canonical URL configuration
+- ✅ Privacy policy pages (bilingual)
+- ✅ Cookie-free (no analytics tracking = better privacy compliance)
 
 ### SEO Maintenance Tasks
 
@@ -448,13 +458,13 @@ All text is directly in `index.html`. To update:
 
 ### Updating Contact Information
 
-**Email**: Search for `contacto@rociotouzasanchez.com` and replace (3 locations)
+**Email**: Search for `info@example.com` placeholder and replace with actual email (multiple locations in index.html)
 
-**Phone**: Search for `+34 XXX XXX XXX` and replace (3 locations)
+**Phone**: Search for `+34 XXX XXX XXX` placeholder and replace with actual phone (multiple locations)
 
-**Location**: Search for `Barcelona, España` if changing city
+**Location**: Update `Barcelona, España` if changing city (index.html, JSON-LD structured data)
 
-**Professional ID**: Line 550 - `Psicóloga colegiada núm. XXXXX`
+**Professional ID**: Update `XXXXX` placeholder with actual colegiada number
 
 ### Adding Images
 
@@ -656,50 +666,104 @@ All text is directly in `index.html`. To update:
 - ✅ HTTPS enforced via GitHub Pages + custom domain
 - ✅ No sensitive data in codebase
 - ✅ No authentication/authorization (not needed)
+- ✅ Self-hosted fonts (no third-party CDN tracking)
+- ✅ No analytics or tracking scripts
+- ✅ Privacy-first architecture
 
-**Risks to Mitigate (When Adding Features)**:
+**Future Considerations** (if adding features):
+- If adding third-party services: Validate embed codes, use CSP headers
+- If adding forms: Implement CSRF protection, rate limiting
+- If adding analytics: Use privacy-respecting alternatives (Plausible, Matomo)
 
-1. **Contact Form**:
-   - Risk: Spam, injection attacks
-   - Mitigation: Add CSRF token, rate limiting, reCAPTCHA
+---
 
-2. **Analytics**:
-   - Risk: PII leakage
-   - Mitigation: Anonymize IPs, follow GDPR
+## Privacy & Cookie Policy
 
-3. **Third-Party Widgets**:
-   - Risk: XSS, data leaks
-   - Mitigation: Use CSP headers, validate embed codes
+### Cookie-Free Implementation
+
+This website is intentionally designed with **zero cookies and zero tracking**:
+
+**What We DON'T Use**:
+- ❌ Google Analytics or any analytics platform
+- ❌ Cookie consent banners (not needed!)
+- ❌ Third-party tracking pixels
+- ❌ Session cookies for browsing
+- ❌ Marketing/advertising cookies
+- ❌ Social media tracking scripts
+
+**Why Cookie-Free?**:
+- **Privacy-first**: Users can browse anonymously
+- **GDPR/LOPD Compliance**: No cookie consent required
+- **Performance**: Faster page loads without tracking scripts
+- **Trust**: Demonstrates commitment to user privacy
+
+### Privacy Policy Pages
+
+**Files**:
+- `/privacy-policy.html` - English version
+- `/politica-privacidad.html` - Spanish version
+
+**Content Covered**:
+- Data controller information
+- What data is collected (minimal: only name/email for therapy sessions via Google Meet)
+- Legal basis for processing (consent, legitimate interest)
+- User rights under GDPR/LOPD (access, rectification, deletion, portability)
+- How to exercise rights
+- Data retention policies
+- Third-party processors (Google Meet for video sessions)
+
+**Key Point**: Website browsing generates NO data collection. Only therapy clients who book sessions provide personal information.
+
+### Philosophy
+
+**Privacy-First Development**:
+1. Only collect data absolutely necessary for service delivery
+2. No passive tracking of website visitors
+3. Transparent about what data is collected and why
+4. Self-hosted assets to avoid external tracking
+5. Easy for users to exercise their privacy rights
 
 ---
 
 ## Future Enhancements
 
-### High Priority
+**Note**: See `ROADMAP.md` for the complete improvement plan with priorities and GitHub issues.
 
-- [ ] Add professional portrait image
-- [ ] Configure WhatsApp with real phone number
-- [ ] Implement contact form backend
-- [ ] Add Google Analytics
-- [ ] Integrate Doctoralia booking widget
-- [ ] Add Google Maps location widget
+### Completed ✅
 
-### Medium Priority
+- ✅ Add professional portrait image (exists as `images/portrait.jpeg`)
+- ✅ Configure WhatsApp integration
+- ✅ Implement FAQ section (12 questions)
+- ✅ Privacy policy pages (bilingual)
 
-- [ ] Add blog section for SEO content
-- [ ] Implement FAQ section (accordion component)
+### Still Needed
+
+**High Priority** (see ROADMAP.md for details):
+- [ ] Photo session for improved professional images
+- [ ] Copywriting review and content refinement
+- [ ] Color palette adjustments (if needed based on user feedback)
+- [ ] SEO optimization (Barcelona-focused keywords, structured data improvements)
+- [ ] Google Business Profile optimization
+- [ ] Submit to professional directories (Doctoralia, Top Doctors, etc.)
+
+**Medium Priority**:
 - [ ] Add testimonials/reviews section
-- [ ] Create newsletter signup
-- [ ] Add social media links (if applicable)
-- [ ] Implement cookie consent banner (GDPR)
+- [ ] Blog/articles section for SEO content
+- [ ] Social media links (if business strategy evolves)
 
-### Low Priority
-
+**Low Priority**:
 - [ ] Dark mode toggle
-- [ ] Print stylesheet for CV/resume
-- [ ] Downloadable resources (PDFs)
+- [ ] Downloadable resources (therapy worksheets, PDFs)
 - [ ] Video introduction/welcome message
-- [ ] Multilingual support beyond ES/EN (e.g., Catalan)
+- [ ] Additional language support (e.g., Catalan)
+
+### Explicitly NOT Planned
+
+- ❌ Google Analytics (conflicts with privacy policy)
+- ❌ Contact forms (WhatsApp-only booking by design)
+- ❌ Cookie consent banners (not needed, cookie-free site)
+- ❌ Doctoralia widget (directory listing yes, widget no)
+- ❌ Google Maps embed (privacy concern, just show address)
 
 ---
 
@@ -734,21 +798,25 @@ All text is directly in `index.html`. To update:
 
 ## Contact & Support
 
-**Website Owner**: Rocío Touza Sanchez
-**Email**: contacto@rociotouzasanchez.com
-**Domain**: rociotouzasanchez.com
+**Website Owner**: Rocío Touza Sanchez (Professional Psychologist)
+**Domain**: https://rociotouzasanchez.com
 **Repository**: fchiusolo/rocio-touza-sanchez-website
+
+**For Contact Information**: Visit the live website for current contact details (email, phone, booking links).
 
 **For AI Assistants**: When working on this project, always:
 1. Test changes locally before committing
 2. Verify both language versions (ES/EN)
-3. Check responsive design on mobile
-4. Follow git branch naming conventions
+3. Check responsive design on mobile (< 768px, 768-1024px, > 1024px)
+4. Follow git branch naming convention: `claude/{descriptive-name}`
 5. Write descriptive commit messages
 6. Maintain existing code style and conventions
+7. **Never commit private information** (phone numbers, emails, professional IDs) to public documentation files
+8. Use placeholders in docs: `info@example.com`, `+XX XXX XXX XXX`, `XXXXX`
+9. Respect the privacy-first philosophy (no tracking, no analytics)
 
 ---
 
-**Last Updated**: November 20, 2024
-**Version**: 1.0.0
+**Last Updated**: December 5, 2025
+**Version**: 2.0.0
 **Maintained By**: Claude AI Assistant
