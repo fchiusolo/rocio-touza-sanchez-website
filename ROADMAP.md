@@ -60,7 +60,6 @@
 - **Long-tail**: "psicóloga LGTBIQ+ Barcelona", "terapia inclusiva Barcelona"
 
 ### Geographic Information
-- **Address**: Carrer de Sardenya, 326, L'Eixample, 08025 Barcelona
 - **Service Area**: Barcelona, Cataluña, España (online therapy available nationwide)
 
 ### Expected SEO Timeline
