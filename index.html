@@ -153,8 +153,10 @@
                     <a href="https://wa.me/34633779016?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20terapia%20online.%20%C2%BFPodr%C3%ADas%20ayudarme%3F" target="_blank" rel="noopener noreferrer" class="nav-link text-forest-green font-semibold" data-es="Reservar" data-en="Book">Reservar</a>
 
                     <!-- Language Switcher -->
-                    <button id="langSwitch" class="px-4 py-2 bg-cream text-forest-green rounded-full font-medium hover:bg-opacity-90 transition">
-                        EN
+                    <button id="langSwitch" class="px-4 py-2 bg-cream rounded-full font-medium hover:bg-opacity-90 transition">
+                        <span id="langEsDesktop" class="font-bold text-forest-green">ES</span>
+                        <span class="text-gray-400 mx-2">|</span>
+                        <span id="langEnDesktop" class="text-gray-400">EN</span>
                     </button>
                 </div>
                 
@@ -176,6 +178,15 @@
                 <a href="#terapia-online" class="block py-2 text-navy" data-es="Terapia Online" data-en="Online Therapy">Terapia Online</a>
                 <a href="#faq" class="block py-2 text-navy" data-es="Preguntas Frecuentes" data-en="FAQ">Preguntas Frecuentes</a>
                 <a href="https://wa.me/34633779016?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20terapia%20online.%20%C2%BFPodr%C3%ADas%20ayudarme%3F" target="_blank" rel="noopener noreferrer" class="block py-2 text-forest-green font-semibold" data-es="Reservar" data-en="Book">Reservar</a>
+
+                <!-- Language Switcher for Mobile -->
+                <div class="mt-4 flex justify-center">
+                    <button id="langSwitchMobile" class="px-6 py-2 bg-cream rounded-full font-medium hover:bg-opacity-90 transition">
+                        <span id="langEs" class="font-bold text-forest-green">ES</span>
+                        <span class="text-gray-400 mx-2">|</span>
+                        <span id="langEn" class="text-gray-400">EN</span>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -1060,11 +1071,28 @@
         // Language Switcher
         let currentLang = 'es';
         const langSwitch = document.getElementById('langSwitch');
-        
-        langSwitch.addEventListener('click', function() {
+        const langSwitchMobile = document.getElementById('langSwitchMobile');
+        const langEs = document.getElementById('langEs');
+        const langEn = document.getElementById('langEn');
+        const langEsDesktop = document.getElementById('langEsDesktop');
+        const langEnDesktop = document.getElementById('langEnDesktop');
+
+        function switchLanguage() {
             currentLang = currentLang === 'es' ? 'en' : 'es';
-            langSwitch.textContent = currentLang === 'es' ? 'EN' : 'ES';
-            
+
+            // Update language switcher styling (both desktop and mobile)
+            if (currentLang === 'es') {
+                langEsDesktop.className = 'font-bold text-forest-green';
+                langEnDesktop.className = 'text-gray-400';
+                langEs.className = 'font-bold text-forest-green';
+                langEn.className = 'text-gray-400';
+            } else {
+                langEsDesktop.className = 'text-gray-400';
+                langEnDesktop.className = 'font-bold text-forest-green';
+                langEs.className = 'text-gray-400';
+                langEn.className = 'font-bold text-forest-green';
+            }
+
             // Update all elements with data-es and data-en attributes
             document.querySelectorAll('[data-es][data-en]').forEach(element => {
                 if (currentLang === 'es') {
@@ -1073,10 +1101,13 @@
                     element.textContent = element.getAttribute('data-en');
                 }
             });
-            
+
             // Update HTML lang attribute
             document.documentElement.lang = currentLang;
-        });
+        }
+
+        langSwitch.addEventListener('click', switchLanguage);
+        langSwitchMobile.addEventListener('click', switchLanguage);
 
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
