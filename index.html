@@ -712,7 +712,7 @@
     </section>
 
     <!-- In-Person Therapy Section -->
-    <section id="terapia-presencial" class="py-16 bg-white">
+    <section id="terapia-presencial" class="py-16 bg-cream">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Section Header -->
@@ -730,30 +730,35 @@
                 </p>
             </div>
 
-            <!-- Location Card -->
-            <div class="max-w-3xl mx-auto mb-12">
-                <div class="bg-cream rounded-2xl p-8 shadow-md">
-                    <div class="text-center mb-6">
-                        <div class="w-12 h-12 bg-sage/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <svg class="w-6 h-6 text-sage" fill="currentColor" viewBox="0 0 24 24">
+            <!-- Location & Map - 2 Column Layout -->
+            <div class="max-w-4xl mx-auto mb-12">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+
+                    <!-- Left Column: Icon & Address -->
+                    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                        <div class="w-16 h-16 bg-sage/20 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-sage" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
                             </svg>
                         </div>
-                        <p class="text-gray-700 text-lg font-semibold mb-1">Carrer de Sardenya, 326</p>
-                        <p class="text-gray-600">L'Eixample, 08025 Barcelona</p>
+                        <div>
+                            <p class="text-gray-900 text-xl font-semibold mb-2">Carrer de Sardenya, 326</p>
+                            <p class="text-gray-700 text-lg mb-1">L'Eixample</p>
+                            <p class="text-gray-600">08025 Barcelona</p>
+                        </div>
                     </div>
 
-                    <!-- OpenStreetMap Embed -->
-                    <div class="mt-6">
+                    <!-- Right Column: Squared Map -->
+                    <div>
                         <iframe
                             width="100%"
-                            height="300"
+                            height="100%"
                             frameborder="0"
                             scrolling="no"
                             marginheight="0"
                             marginwidth="0"
                             src="https://www.openstreetmap.org/export/embed.html?bbox=2.1774,41.4076,2.1814,41.4096&layer=mapnik&marker=41.4086,2.1794"
-                            class="rounded-xl"
+                            class="rounded-xl w-full aspect-square"
                             title="Ubicación de la consulta / Office location">
                         </iframe>
                         <p class="text-xs text-gray-500 mt-2 text-center">
@@ -767,6 +772,7 @@
                             </a>
                         </p>
                     </div>
+
                 </div>
             </div>
 
@@ -784,7 +790,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="py-20 bg-cream">
+    <section id="faq" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Section Header -->
@@ -1111,7 +1117,7 @@
     </section>
 
     <!-- Booking Section -->
-    <section id="reservar" class="py-20 bg-white">
+    <section id="reservar" class="py-20 bg-cream">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl md:text-5xl font-playfair font-bold text-navy mb-6 text-center"
                 data-es="Reserva tu sesión"
