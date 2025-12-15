@@ -68,7 +68,7 @@ The website is organized into **5 main sections**, all in `index.html`:
 1. **Hero Section** (`#inicio`) - Welcome message with CTA buttons and session info
 2. **About Section** (`#sobre-mi`) - Psychologist bio, credentials, and therapeutic approach
 3. **Services Section** (`#servicios`) - Specialization areas with detailed service cards
-4. **Online Therapy Section** (`#terapia-online`) - Session details, pricing, platform info
+4. **Modalidades Section** (`#modalidades`) - Online and in-person therapy options, session details, pricing
 5. **FAQ Section** (`#faq`) - Frequently asked questions (12 common questions)
 
 **Note**: Contact information appears in the footer, not as a separate section. The contact form was intentionally removed in favor of direct WhatsApp booking to reduce friction in the user journey.
@@ -531,7 +531,7 @@ All text is directly in `index.html`. To update:
 
 - **Indentation**: 4 spaces
 - **Attributes**: Double quotes always
-- **IDs**: Use kebab-case (`#sobre-mi`, `#terapia-online`)
+- **IDs**: Use kebab-case (`#sobre-mi`, `#modalidades`)
 - **Classes**: Tailwind utility classes in logical order (layout → spacing → colors → typography)
 - **Comments**: Use HTML comments to mark major sections
 

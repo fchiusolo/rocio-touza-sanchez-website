@@ -148,7 +148,7 @@
                     <a href="#inicio" class="nav-link text-navy font-medium" data-es="Inicio" data-en="Home">Inicio</a>
                     <a href="#sobre-mi" class="nav-link text-navy font-medium" data-es="Sobre mí" data-en="About">Sobre mí</a>
                     <a href="#servicios" class="nav-link text-navy font-medium" data-es="Servicios" data-en="Services">Servicios</a>
-                    <a href="#terapia-online" class="nav-link text-navy font-medium" data-es="Terapia Online" data-en="Online Therapy">Terapia Online</a>
+                    <a href="#modalidades" class="nav-link text-navy font-medium" data-es="Modalidades" data-en="Modalities">Modalidades</a>
                     <a href="#faq" class="nav-link text-navy font-medium" data-es="Preguntas Frecuentes" data-en="FAQ">Preguntas Frecuentes</a>
                     <a href="#reservar" class="nav-link text-navy font-medium" data-es="Reservar" data-en="Book">Reservar</a>
 
@@ -175,7 +175,7 @@
                 <a href="#inicio" class="block py-2 text-navy" data-es="Inicio" data-en="Home">Inicio</a>
                 <a href="#sobre-mi" class="block py-2 text-navy" data-es="Sobre mí" data-en="About">Sobre mí</a>
                 <a href="#servicios" class="block py-2 text-navy" data-es="Servicios" data-en="Services">Servicios</a>
-                <a href="#terapia-online" class="block py-2 text-navy" data-es="Terapia Online" data-en="Online Therapy">Terapia Online</a>
+                <a href="#modalidades" class="block py-2 text-navy" data-es="Modalidades" data-en="Modalities">Modalidades</a>
                 <a href="#faq" class="block py-2 text-navy" data-es="Preguntas Frecuentes" data-en="FAQ">Preguntas Frecuentes</a>
                 <a href="#reservar" class="block py-2 text-navy" data-es="Reservar" data-en="Book">Reservar</a>
 
@@ -606,20 +606,22 @@
     </section>
 
     <!-- Online Therapy Section -->
-    <section id="terapia-online" class="py-20 bg-white">
+    <section id="modalidades" class="py-20 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl md:text-5xl font-playfair font-bold text-navy mb-6 text-center"
-                data-es="Terapia online: cómo funciona"
-                data-en="Online therapy: how it works">
-                Terapia online: cómo funciona
+                data-es="Modalidades"
+                data-en="Modalities">
+                Modalidades
             </h2>
             <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto"
-               data-es="Las sesiones online ofrecen la misma calidad que las presenciales, con la comodidad de conectar desde donde te sientas seguro."
-               data-en="Online sessions offer the same quality as in-person sessions, with the comfort of connecting from wherever you feel safe.">
-                Las sesiones online ofrecen la misma calidad que las presenciales, con la comodidad de conectar desde donde te sientas seguro.
+               data-es="Ofrezco terapia online (modalidad principal) y presencial con disponibilidad limitada en Barcelona."
+               data-en="I offer online therapy (primary modality) and in-person therapy with limited availability in Barcelona.">
+                Ofrezco terapia online (modalidad principal) y presencial con disponibilidad limitada en Barcelona.
             </p>
-            
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
+
+            <!-- Shared Information Grid (3 cards) -->
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+                <!-- Duration Card -->
                 <div class="bg-forest-green/10 rounded-2xl p-8">
                     <div class="flex items-start gap-4 mb-4">
                         <div class="w-12 h-12 bg-forest-green rounded-full flex items-center justify-center flex-shrink-0">
@@ -634,6 +636,7 @@
                     </div>
                 </div>
 
+                <!-- Price Card -->
                 <div class="bg-sage/10 rounded-2xl p-8">
                     <div class="flex items-start gap-4 mb-4">
                         <div class="w-12 h-12 bg-sage rounded-full flex items-center justify-center flex-shrink-0">
@@ -648,20 +651,7 @@
                     </div>
                 </div>
 
-                <div class="bg-navy/10 rounded-2xl p-8">
-                    <div class="flex items-start gap-4 mb-4">
-                        <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M17,10.5V7A1,1 0 0,0 16,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16A1,1 0 0,0 17,17V13.5L21,17.5V6.5L17,10.5Z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-playfair font-semibold text-navy mb-2" data-es="Plataforma" data-en="Platform">Plataforma</h3>
-                            <p class="text-gray-700" data-es="Sesiones por Google Meet: fácil de usar, segura y sin necesidad de instalar aplicaciones." data-en="Sessions via Google Meet: easy to use, secure, and no need to install apps.">Sesiones por Google Meet: fácil de usar, segura y sin necesidad de instalar aplicaciones.</p>
-                        </div>
-                    </div>
-                </div>
-
+                <!-- Cancellations Card -->
                 <div class="bg-forest-green/10 rounded-2xl p-8">
                     <div class="flex items-start gap-4 mb-4">
                         <div class="w-12 h-12 bg-forest-green rounded-full flex items-center justify-center flex-shrink-0">
@@ -677,9 +667,115 @@
                 </div>
             </div>
 
+            <!-- Online Therapy Subsection -->
+            <div class="bg-forest-green/5 rounded-3xl p-8 md:p-10 mb-12">
+                <!-- Heading with Badge -->
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                    <h3 class="text-2xl md:text-3xl font-playfair font-bold text-navy mb-3 md:mb-0"
+                        data-es="Terapia Online"
+                        data-en="Online Therapy">
+                        Terapia Online
+                    </h3>
+                    <span class="inline-flex items-center px-4 py-2 rounded-full bg-forest-green text-white text-sm font-semibold"
+                          data-es="Modalidad principal"
+                          data-en="Primary modality">
+                        Modalidad principal
+                    </span>
+                </div>
+
+                <!-- Description -->
+                <p class="text-gray-700 mb-8 leading-relaxed"
+                   data-es="Las sesiones online ofrecen la misma calidad que las presenciales, con la comodidad de conectar desde donde te sientas seguro. Puedes acceder a terapia desde cualquier lugar con conexión a internet."
+                   data-en="Online sessions offer the same quality as in-person sessions, with the comfort of connecting from wherever you feel safe. You can access therapy from anywhere with internet connection.">
+                    Las sesiones online ofrecen la misma calidad que las presenciales, con la comodidad de conectar desde donde te sientas seguro. Puedes acceder a terapia desde cualquier lugar con conexión a internet.
+                </p>
+
+                <!-- Platform Card -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17,10.5V7A1,1 0 0,0 16,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16A1,1 0 0,0 17,17V13.5L21,17.5V6.5L17,10.5Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-playfair font-semibold text-navy mb-2"
+                                data-es="Plataforma"
+                                data-en="Platform">Plataforma</h4>
+                            <p class="text-gray-700"
+                               data-es="Sesiones por Google Meet: fácil de usar, segura y sin necesidad de instalar aplicaciones."
+                               data-en="Sessions via Google Meet: easy to use, secure, and no need to install apps.">
+                                Sesiones por Google Meet: fácil de usar, segura y sin necesidad de instalar aplicaciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Separator -->
+            <div class="relative my-12">
+                <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                    <div class="w-full border-t-2 border-gray-200"></div>
+                </div>
+                <div class="relative flex justify-center">
+                    <span class="bg-white px-6 py-2 rounded-full border-2 border-sage">
+                        <span class="text-lg font-playfair font-semibold text-navy"
+                              data-es="También disponible"
+                              data-en="Also available">
+                            También disponible
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- In-Person Therapy Subsection -->
+            <div class="bg-sage/5 rounded-3xl p-8 md:p-10 mb-12">
+                <!-- Heading with Badge -->
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                    <h3 class="text-xl md:text-2xl font-playfair font-bold text-navy mb-3 md:mb-0"
+                        data-es="Terapia Presencial"
+                        data-en="In-Person Therapy">
+                        Terapia Presencial
+                    </h3>
+                    <span class="inline-flex items-center px-4 py-2 rounded-full bg-sage text-white text-sm font-semibold"
+                          data-es="Disponibilidad limitada"
+                          data-en="Limited availability">
+                        Disponibilidad limitada
+                    </span>
+                </div>
+
+                <!-- Description -->
+                <p class="text-gray-700 mb-8 leading-relaxed"
+                   data-es="Si prefieres las sesiones en persona, ofrezco un espacio acogedor en Barcelona. Debido a la disponibilidad limitada, te invito a contactarme para consultar cupos disponibles."
+                   data-en="If you prefer in-person sessions, I offer a welcoming space in Barcelona. Due to limited availability, I invite you to contact me to check available slots.">
+                    Si prefieres las sesiones en persona, ofrezco un espacio acogedor en Barcelona. Debido a la disponibilidad limitada, te invito a contactarme para consultar cupos disponibles.
+                </p>
+
+                <!-- Location Card -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-playfair font-semibold text-navy mb-2"
+                                data-es="Ubicación"
+                                data-en="Location">Ubicación</h4>
+                            <p class="text-gray-700"
+                               data-es="Carrer de Sardenya, 326, L'Eixample, 08025 Barcelona (zona Sagrada Familia)"
+                               data-en="Carrer de Sardenya, 326, L'Eixample, 08025 Barcelona (Sagrada Familia area)">
+                                Carrer de Sardenya, 326, L'Eixample, 08025 Barcelona (zona Sagrada Familia)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Booking CTA -->
             <div class="text-center mt-12">
-                <a href="https://wa.me/34633779016?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20terapia%20online.%20%C2%BFPodr%C3%ADas%20ayudarme%3F" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 bg-forest-green text-white rounded-full font-semibold hover:bg-opacity-90 transition shadow-lg text-lg">
+                <a href="https://wa.me/34633779016?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n.%20%C2%BFPodr%C3%ADas%20ayudarme%3F" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 bg-forest-green text-white rounded-full font-semibold hover:bg-opacity-90 transition shadow-lg text-lg">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                     </svg>
@@ -702,9 +798,9 @@
                     Preguntas Frecuentes
                 </h2>
                 <p class="text-xl text-gray-600"
-                   data-es="Respuestas a las dudas más comunes sobre la terapia online"
-                   data-en="Answers to the most common questions about online therapy">
-                    Respuestas a las dudas más comunes sobre la terapia online
+                   data-es="Respuestas a las dudas más comunes sobre terapia"
+                   data-en="Answers to the most common questions about therapy">
+                    Respuestas a las dudas más comunes sobre terapia
                 </p>
             </div>
 
@@ -737,9 +833,9 @@
                     <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
                             aria-expanded="false">
                         <span class="font-semibold text-navy text-lg pr-4"
-                              data-es="¿Qué necesito para las sesiones?"
-                              data-en="What do I need for sessions?">
-                            ¿Qué necesito para las sesiones?
+                              data-es="¿Qué necesito para las sesiones online?"
+                              data-en="What do I need for online sessions?">
+                            ¿Qué necesito para las sesiones online?
                         </span>
                         <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
@@ -812,6 +908,27 @@
                         <p data-es="Sí. Numerosos estudios demuestran que la terapia online es igual de efectiva que la presencial. Lo más importante es la conexión terapéutica y tu compromiso con el proceso."
                            data-en="Yes. Numerous studies show that online therapy is as effective as in-person therapy. The most important factors are the therapeutic connection and your commitment to the process.">
                             Sí. Numerosos estudios demuestran que la terapia online es igual de efectiva que la presencial. Lo más importante es la conexión terapéutica y tu compromiso con el proceso.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Question 5.5 - In-Person Therapy -->
+                <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
+                            aria-expanded="false">
+                        <span class="font-semibold text-navy text-lg pr-4"
+                              data-es="¿Ofrecés terapia presencial?"
+                              data-en="Do you offer in-person therapy?">
+                            ¿Ofrecés terapia presencial?
+                        </span>
+                        <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-5 text-gray-700 leading-relaxed hidden">
+                        <p data-es="Sí, aunque la terapia online es mi modalidad principal, también ofrezco sesiones presenciales en Barcelona (zona Sagrada Familia) con disponibilidad limitada. Si te interesa esta opción, contáctame para consultar cupos disponibles."
+                           data-en="Yes, although online therapy is my primary modality, I also offer in-person sessions in Barcelona (Sagrada Familia area) with limited availability. If you're interested in this option, contact me to check available slots.">
+                            Sí, aunque la terapia online es mi modalidad principal, también ofrezco sesiones presenciales en Barcelona (zona Sagrada Familia) con disponibilidad limitada. Si te interesa esta opción, contáctame para consultar cupos disponibles.
                         </p>
                     </div>
                 </div>
@@ -1082,7 +1199,7 @@
                         <li><a href="#inicio" class="hover:text-forest-green transition" data-es="Inicio" data-en="Home">Inicio</a></li>
                         <li><a href="#sobre-mi" class="hover:text-forest-green transition" data-es="Sobre mí" data-en="About">Sobre mí</a></li>
                         <li><a href="#servicios" class="hover:text-forest-green transition" data-es="Servicios" data-en="Services">Servicios</a></li>
-                        <li><a href="#terapia-online" class="hover:text-forest-green transition" data-es="Terapia Online" data-en="Online Therapy">Terapia Online</a></li>
+                        <li><a href="#modalidades" class="hover:text-forest-green transition" data-es="Modalidades" data-en="Modalities">Modalidades</a></li>
                         <li><a href="#faq" class="hover:text-forest-green transition" data-es="Preguntas Frecuentes" data-en="FAQ">Preguntas Frecuentes</a></li>
                         <li><a href="#reservar" class="hover:text-forest-green transition" data-es="Reservar" data-en="Book">Reservar</a></li>
                     </ul>
