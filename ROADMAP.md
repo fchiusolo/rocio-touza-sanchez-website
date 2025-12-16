@@ -6,13 +6,13 @@
 
 ### Phase 1: On-Page SEO (Code Changes)
 
-| # | Task | Priority | Complexity | GitHub Issue |
-|---|------|----------|------------|--------------|
-| 1 | Optimize meta tags with Barcelona keywords | High | Easy | [#17](https://github.com/fchiusolo/rocio-touza-sanchez-website/issues/17) |
-| 2 | Add "Barcelona" to H1 and visible content | High | Easy | [#18](https://github.com/fchiusolo/rocio-touza-sanchez-website/issues/18) |
-| 3 | Enhance structured data with LocalBusiness schema | High | Medium | [#19](https://github.com/fchiusolo/rocio-touza-sanchez-website/issues/19) |
-| 4 | Add canonical and hreflang tags | High | Easy | [#20](https://github.com/fchiusolo/rocio-touza-sanchez-website/issues/20) |
-| 5 | Update sitemap.xml lastmod dates | High | Easy | [#21](https://github.com/fchiusolo/rocio-touza-sanchez-website/issues/21) |
+| # | Task | Priority | Complexity | Status | GitHub Issue |
+|---|------|----------|------------|--------|--------------|
+| 1 | Optimize meta tags with Barcelona keywords | High | Easy | Pending | [#17](https://github.com/fchiusolo/rocio-touza-sanchez-website/issues/17) |
+| 2 | Add "Barcelona" to H1 and visible content | High | Easy | Pending | [#18](https://github.com/fchiusolo/rocio-touza-sanchez-website/issues/18) |
+| 3 | Enhance structured data with LocalBusiness schema | High | Medium | Pending | [#19](https://github.com/fchiusolo/rocio-touza-sanchez-website/issues/19) |
+| 4 | Add canonical and hreflang tags | High | Easy | ✅ **COMPLETE** | [#36](https://github.com/fchiusolo/rocio-touza-sanchez-website/issues/36) |
+| 5 | Update sitemap.xml lastmod dates | High | Easy | ✅ **COMPLETE** | [#37](https://github.com/fchiusolo/rocio-touza-sanchez-website/issues/37) |
 | 6 | Add geographic keywords throughout content | Medium | Medium | [#22](https://github.com/fchiusolo/rocio-touza-sanchez-website/issues/22) |
 | 7 | Expand service descriptions with more detail | Medium | Medium | [#23](https://github.com/fchiusolo/rocio-touza-sanchez-website/issues/23) |
 | 8 | Add alt text to all images | Medium | Easy | [#24](https://github.com/fchiusolo/rocio-touza-sanchez-website/issues/24) |
@@ -50,4 +50,14 @@
 
 ---
 
-*Last updated: December 5, 2025*
+## Recent Completions
+
+### Multilingual Support (December 16, 2025)
+- ✅ Implemented separate-file multilingual architecture
+- ✅ Created English version at `/en/index.html`
+- ✅ Added hreflang tags to all pages (satisfies Task #4)
+- ✅ Updated sitemap.xml with bilingual structure (satisfies Task #5)
+- ✅ Implemented URL-based language switcher
+- 📋 See `TESTING-REPORT.md` for comprehensive testing checklist
+
+*Last updated: December 16, 2025*
