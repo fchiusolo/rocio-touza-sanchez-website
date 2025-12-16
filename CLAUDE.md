@@ -35,17 +35,20 @@ This is a **professional bilingual website** for psychologist **Rocío Touza San
 ## File Structure
 
 ```
-├── index.html                  # Main website (single-page app with all sections)
-├── privacy-policy.html         # English privacy policy page
+├── index.html                  # Spanish homepage (root domain)
 ├── politica-privacidad.html    # Spanish privacy policy page
+├── /en/                        # English language directory
+│   ├── index.html              # English homepage
+│   └── privacy-policy.html     # English privacy policy page
 ├── _config.yml                 # Jekyll/GitHub Pages configuration
-├── sitemap.xml                 # SEO sitemap for search engines
+├── sitemap.xml                 # Bilingual sitemap for search engines
 ├── robots.txt                  # Search engine crawling rules
 ├── CNAME                       # Custom domain configuration (rociotouzasanchez.com)
 ├── .gitignore                  # Git ignore patterns (.DS_Store, editor files, etc.)
 ├── README.md                   # Project documentation for developers
 ├── ROADMAP.md                  # Project roadmap and improvement plan
 ├── CLAUDE.md                   # This file - AI assistant guide
+├── TESTING-REPORT.md           # Multilingual implementation testing report
 ├── /fonts/                     # Self-hosted font files (privacy-first)
 │   ├── OpenSans-VariableFont_wdth,wght.ttf
 │   └── OpenSans-Italic-VariableFont_wdth,wght.ttf
@@ -56,6 +59,12 @@ This is a **professional bilingual website** for psychologist **Rocío Touza San
 
 ### Missing Files
 - `og-image.jpg` - Social media preview image (1200x630px recommended) - still needed for Open Graph tags
+
+### Multilingual Structure
+- **Spanish (Primary)**: All files at root level (`/index.html`, `/politica-privacidad.html`)
+- **English**: All files in `/en/` subdirectory (`/en/index.html`, `/en/privacy-policy.html`)
+- **SEO**: Each language version has proper hreflang tags and unique meta descriptions
+- **Sitemap**: Bilingual sitemap lists all language versions
 
 ---
 
@@ -132,36 +141,58 @@ colors: {
 
 ## Bilingual Implementation
 
+### Architecture: Separate Files Strategy
+
+The website uses a **separate-file multilingual architecture** with dedicated URLs for each language:
+
+- **Spanish (Primary)**: `/index.html` - Root domain
+- **English**: `/en/index.html` - English subdirectory
+- **Privacy Policies**: `/politica-privacidad.html` (Spanish), `/en/privacy-policy.html` (English)
+
 ### How It Works
 
-1. **Language Storage**: `currentLang` variable in JavaScript (default: 'es')
-2. **Data Attributes**: Every translatable element has `data-es` and `data-en`
-3. **Toggle Logic**: Button click switches language and updates all elements
-4. **HTML Lang**: Updates `<html lang="">` attribute for accessibility
+1. **Separate HTML Files**: Each language has its own complete HTML file
+2. **URL-Based Navigation**: Language switcher uses hyperlinks (not JavaScript)
+3. **SEO-Optimized**: Proper hreflang tags signal language versions to search engines
+4. **No Data Attributes**: Pure single-language content (no `data-es`/`data-en`)
 
-### Example
+### Language Switcher
 
+**Spanish Version** (`/index.html`):
 ```html
-<h1 data-es="Un espacio seguro para tu bienestar emocional"
-    data-en="A safe space for your emotional wellbeing">
-    Un espacio seguro para tu bienestar emocional
-</h1>
+<a href="/en/" class="px-4 py-2 bg-cream rounded-full">
+    <span class="font-bold text-forest-green">ES</span>
+    <span class="text-gray-400 mx-2">|</span>
+    <span class="text-gray-400">EN</span>
+</a>
+```
+
+**English Version** (`/en/index.html`):
+```html
+<a href="/" class="px-4 py-2 bg-cream rounded-full">
+    <span class="text-gray-400">ES</span>
+    <span class="text-gray-400 mx-2">|</span>
+    <span class="font-bold text-forest-green">EN</span>
+</a>
 ```
 
 ### Adding New Translatable Content
 
-1. Add both `data-es` and `data-en` attributes
-2. Set default content to Spanish text
-3. Language switcher will handle toggling automatically
+1. **Update Spanish version**: Edit `/index.html` with Spanish text
+2. **Update English version**: Edit `/en/index.html` with English text
+3. **Maintain structure**: Keep HTML structure identical between versions
+4. **No attributes needed**: Just plain text content in each language
 
 ---
 
 ## Key Features & Functionality
 
-### 1. Language Switcher (index.html:565-584)
-- **Location**: Top navigation bar
-- **Button**: Shows "EN" when Spanish is active, "ES" when English
-- **Mechanism**: Query all `[data-es][data-en]` elements and update `textContent`
+### 1. Language Switcher
+- **Location**: Top navigation bar (desktop + mobile menu)
+- **Type**: URL-based hyperlink (not JavaScript toggle)
+- **Spanish Version**: Link to `/en/` - Shows "ES" as active (bold, green)
+- **English Version**: Link to `/` - Shows "EN" as active (bold, green)
+- **Mechanism**: Simple navigation - no JavaScript required
 
 ### 2. Mobile Menu (index.html:586-599)
 - **Trigger**: Hamburger icon button
@@ -817,6 +848,20 @@ This website is intentionally designed with **zero cookies and zero tracking**:
 
 ---
 
-**Last Updated**: December 5, 2025
-**Version**: 2.0.0
+**Last Updated**: December 16, 2025
+**Version**: 3.0.0 - Multilingual Implementation Complete
 **Maintained By**: Claude AI Assistant
+
+## Recent Changes (v3.0.0)
+
+**Multilingual Support - Separate Files Strategy** (December 16, 2025):
+- ✅ Transitioned from JavaScript data-attribute toggling to URL-based separate files
+- ✅ Created English version at `/en/index.html` with professional translations
+- ✅ Updated Spanish version to remove all English content
+- ✅ Implemented URL-based language switcher (no JavaScript required)
+- ✅ Added hreflang tags to all 4 pages (2 homepages + 2 privacy policies)
+- ✅ Updated sitemap.xml with bilingual structure
+- ✅ Updated privacy policy color schemes to match current design system
+- ✅ Moved English privacy policy to `/en/privacy-policy.html`
+- ✅ All 142 bilingual elements converted to single-language content
+- 📋 Created comprehensive TESTING-REPORT.md for manual QA
