@@ -1,0 +1,246 @@
+{
+  "lang": "es",
+  "locale": "es_ES",
+  "site": {
+    "title": "Rocío Touza Sánchez - Psicóloga Online",
+    "url": "https://rociotouzasanchez.com",
+    "phone": "+34-633-779-016",
+    "email": "rociotouzasanchez@outlook.com",
+    "location": "Barcelona",
+    "country": "España",
+    "countryCode": "ES"
+  },
+  "meta": {
+    "title": "Rocío Touza Sánchez - Psicóloga Online | Terapia con Enfoque Inclusivo",
+    "description": "Psicóloga en Barcelona. Terapia psicológica con orientación analítica, y sensibilidad social. Un espacio seguro donde pensar(se), elaborar malestares y así poder encontrar nuevas formas de estar.",
+    "keywords": "psicóloga online, terapia LGTBIQ+, psicóloga inclusiva, terapia diversidad, ansiedad, depresión, migración",
+    "author": "Rocío Touza Sánchez",
+    "ogTitle": "Rocío Touza Sánchez - Psicóloga Online",
+    "ogDescription": "Terapia psicológica online inclusiva y culturalmente sensible. Especializada en diversidad, LGTBIQ+ y procesos migratorios.",
+    "ogImage": "https://rociotouzasanchez.com/og-image.jpg",
+    "schemaDescription": "Psicóloga online especializada en terapia inclusiva, diversidad LGTBIQ+ y procesos migratorios."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "services": "Servicios",
+    "modalities": "Modalidades",
+    "faq": "Preguntas Frecuentes",
+    "book": "Reservar",
+    "ariaMenuLabel": "Abrir menú de navegación"
+  },
+  "hero": {
+    "title": "Un espacio seguro para tu bienestar emocional",
+    "subtitle": "Terapia online con orientación psicoanalítica, y sensibilidad social. Un espacio donde pensar(se), elaborar malestares y así poder encontrar nuevas formas de estar.",
+    "sessionInfo": "Sesiones de 50 minutos | 70€ | Online",
+    "ctaPrimary": "Reservar sesión",
+    "ctaSecondary": "Conocer más"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Hola! Soy Rocío",
+    "bio": [
+      "Soy psicóloga clínica con formación en orientación psicoanalítica, y con especialización en perspectiva de género, diversidad LGTBIQ+ y procesos migratorios.",
+      "Mi trabajo terapéutico parte de la base de que cada persona es singular y que las dificultades con las que llegamos a consulta no pueden entenderse desvinculadas del contexto social y cultural en el que vivimos.",
+      "Pienso que el malestar nos habla, y que necesitamos de un espacio donde escucharnos y cuidarnos para poder transformarlo. Mi rol como psicoterapeuta es acompañar ese proceso, creando un espacio seguro y de confianza donde podamos ir construyendo juntas nuevos sentidos."
+    ],
+    "credentials": "Psicóloga General Sanitaria, Nº Col. 33914",
+    "training": "Formación en Psicoanálisis | Perspectiva de Género | Diversidad LGTBIQ+"
+  },
+  "services": {
+    "title": "¿En qué puedo ayudarte?",
+    "subtitle": "Mi trabajo se centra en:",
+    "categories": [
+      {
+        "name": "Salud Emocional",
+        "items": [
+          {
+            "title": "Ansiedad y Estrés",
+            "description": "Acompañamiento en momentos de ansiedad, ataques de pánico, preocupaciones excesivas o estrés que impactan tu día a día."
+          },
+          {
+            "title": "Depresión",
+            "description": "Trabajo con estados de tristeza prolongada, falta de motivación, apatía y dificultades para encontrar sentido."
+          },
+          {
+            "title": "Autoestima y Crecimiento Personal",
+            "description": "Exploración de inseguridades, autocrítica excesiva y dificultades para reconocer tu propio valor."
+          },
+          {
+            "title": "Gestión Emocional",
+            "description": "Aprender a identificar, comprender y expresar emociones de forma saludable."
+          }
+        ]
+      },
+      {
+        "name": "Identidad y Diversidad",
+        "items": [
+          {
+            "title": "Diversidad LGTBIQ+",
+            "description": "Acompañamiento en procesos de exploración de identidad de género, orientación sexual y coming out."
+          },
+          {
+            "title": "Identidad y Pertenencia",
+            "description": "Trabajo con conflictos relacionados con la identidad cultural, racial, de género o sexual."
+          }
+        ]
+      },
+      {
+        "name": "Relaciones y Vínculos",
+        "items": [
+          {
+            "title": "Relaciones Interpersonales",
+            "description": "Dificultades en relaciones de pareja, familiares, amistades o entornos laborales."
+          },
+          {
+            "title": "Duelos y Pérdidas",
+            "description": "Elaboración de pérdidas significativas: personas, relaciones, proyectos o etapas vitales."
+          }
+        ]
+      },
+      {
+        "name": "Procesos Vitales",
+        "items": [
+          {
+            "title": "Procesos Migratorios",
+            "description": "Acompañamiento en duelos migratorios, choque cultural, y construcción de nueva identidad en contexto de migración."
+          },
+          {
+            "title": "Transiciones Vitales",
+            "description": "Cambios de etapa, crisis existenciales, decisiones importantes que generan incertidumbre."
+          },
+          {
+            "title": "Trauma y Experiencias Difíciles",
+            "description": "Elaboración de experiencias traumáticas y su impacto en el presente."
+          }
+        ]
+      }
+    ]
+  },
+  "modalities": {
+    "title": "Modalidades de terapia",
+    "subtitle": "Elige cómo quieres trabajar",
+    "online": {
+      "title": "Terapia Online",
+      "description": "Sesiones por videollamada desde cualquier lugar. Flexibilidad horaria y comodidad sin salir de casa.",
+      "benefits": [
+        "Desde cualquier lugar de España",
+        "Flexibilidad horaria",
+        "Mismo nivel de confidencialidad",
+        "Conexión segura y privada"
+      ]
+    },
+    "inPerson": {
+      "title": "Terapia Presencial",
+      "description": "Sesiones presenciales en consulta en Barcelona. Espacio cómodo y privado para tu proceso terapéutico.",
+      "location": "Barcelona, España",
+      "benefits": [
+        "Espacio físico acogedor",
+        "Contacto directo",
+        "En el corazón de Barcelona",
+        "Fácil acceso en transporte público"
+      ]
+    },
+    "pricing": {
+      "title": "Tarifas y duración",
+      "sessionDuration": "50 minutos",
+      "sessionPrice": "70€",
+      "frequency": "Posibilidad de adaptar la frecuencia según tus necesidades",
+      "paymentMethods": "Transferencia bancaria, Bizum o efectivo"
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "items": [
+      {
+        "question": "¿Cómo funcionan las sesiones online?",
+        "answer": "Las sesiones online se realizan a través de Google Meet, una plataforma segura y confidencial. Solo necesitas conexión a internet y un dispositivo con cámara y micrófono."
+      },
+      {
+        "question": "¿Cuánto dura una sesión?",
+        "answer": "Cada sesión dura 50 minutos. Esta es la duración estándar en psicoterapia, permite trabajar en profundidad manteniendo la concentración."
+      },
+      {
+        "question": "¿Con qué frecuencia nos veríamos?",
+        "answer": "Lo habitual es empezar con sesiones semanales, aunque se puede adaptar según tus necesidades y disponibilidad. Lo importante es mantener una continuidad que permita que el proceso terapéutico avance."
+      },
+      {
+        "question": "¿Cuánto dura un proceso terapéutico?",
+        "answer": "No hay una duración fija. Depende de tus objetivos, del tipo de problemática y de tus propios tiempos. Algunas personas necesitan unos meses, otras prefieren un acompañamiento más prolongado."
+      },
+      {
+        "question": "¿Cómo sé si necesito terapia?",
+        "answer": "Si sientes malestar emocional persistente, si hay algo que te preocupa o te limita, si necesitas un espacio para hablar y pensar sobre lo que te pasa, la terapia puede ayudarte. No hace falta estar en crisis para empezar."
+      },
+      {
+        "question": "¿Es confidencial lo que hablamos?",
+        "answer": "Absolutamente. Todo lo que compartimos está protegido por el secreto profesional y el código deontológico del psicólogo. Tus datos están protegidos según la RGPD."
+      },
+      {
+        "question": "¿Trabajas con adolescentes?",
+        "answer": "Trabajo principalmente con personas adultas (a partir de 18 años). Para menores de edad, recomiendo buscar profesionales especializados en infanto-juvenil."
+      },
+      {
+        "question": "¿Qué diferencia hay entre psicólogo y psiquiatra?",
+        "answer": "Los psicólogos trabajamos desde la palabra y el vínculo terapéutico. Los psiquiatras son médicos especializados que pueden recetar medicación. Ambos enfoques son complementarios y en algunos casos se pueden combinar."
+      },
+      {
+        "question": "¿Haces informes o certificados?",
+        "answer": "Puedo emitir informes clínicos si lo necesitas para trámites específicos. Lo hablaríamos en sesión y te explicaría el proceso."
+      },
+      {
+        "question": "¿Cómo es la primera sesión?",
+        "answer": "La primera sesión es un espacio para conocernos y que me cuentes qué te trae a consulta. Te haré algunas preguntas para entender tu situación y, al final, hablaremos sobre cómo podríamos trabajar juntas."
+      },
+      {
+        "question": "¿Puedo cancelar o cambiar una sesión?",
+        "answer": "Sí, siempre que avises con al menos 24 horas de antelación. De esta forma podemos reorganizar el horario sin que pierdas la sesión."
+      },
+      {
+        "question": "¿Aceptas seguros médicos?",
+        "answer": "Trabajo de forma privada, no trabajo con aseguradoras. Sin embargo, algunos seguros médicos permiten reembolsos por sesiones con psicólogos sanitarios. Te recomiendo consultar con tu aseguradora."
+      }
+    ]
+  },
+  "reviews": {
+    "title": "¿Ya has trabajado conmigo?",
+    "subtitle": "Tu opinión es importante para otras personas que están buscando apoyo psicológico",
+    "ctaText": "Dejar una reseña en Google",
+    "googleMapsUrl": "https://g.page/r/YOUR_GOOGLE_MAPS_LINK/review"
+  },
+  "book": {
+    "title": "Reservar sesión",
+    "subtitle": "¿Listo para dar el primer paso?",
+    "description": "Contacta conmigo por WhatsApp o correo electrónico y resolveré todas tus dudas. Podemos agendar una primera sesión cuando te sientas preparado.",
+    "whatsappCta": "Contactar por WhatsApp",
+    "emailCta": "Enviar correo electrónico",
+    "note": "No usamos cookies. Tu privacidad es importante."
+  },
+  "contact": {
+    "whatsappMessage": "Hola Rocío, me gustaría reservar una sesión de terapia online. ¿Podrías ayudarme?",
+    "whatsappShortMessage": "Hola Rocío, me gustaría reservar una sesión. ¿Podrías ayudarme?",
+    "emailSubject": "Consulta sobre terapia online",
+    "emailBody": "Hola Rocío,\\n\\nMe gustaría reservar una sesión de terapia online.\\n\\nGracias.",
+    "ariaWhatsapp": "Reservar sesión por WhatsApp",
+    "ariaEmail": "Enviar correo electrónico"
+  },
+  "footer": {
+    "tagline": "Psicóloga",
+    "quickLinks": "Enlaces rápidos",
+    "contactSection": "Contacto",
+    "legalSection": "Legal",
+    "links": {
+      "home": "Inicio",
+      "about": "Sobre mí",
+      "services": "Servicios",
+      "modalities": "Modalidades",
+      "faq": "Preguntas Frecuentes",
+      "book": "Reservar",
+      "privacy": "Política de Privacidad"
+    },
+    "credentials": "Psicóloga General Sanitaria Nº Col. 33914",
+    "location": "Barcelona, España",
+    "privacyUrl": "/politica-privacidad.html",
+    "copyright": "Todos los derechos reservados."
+  }
+}

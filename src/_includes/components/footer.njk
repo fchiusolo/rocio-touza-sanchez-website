@@ -1,0 +1,45 @@
+<!-- Footer -->
+<footer class="bg-navy text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="{{ imagePath }}images/logo.png" alt="Logo" class="w-8 h-8 object-contain">
+                    <div>
+                        <div class="font-playfair text-lg">Rocío Touza Sánchez</div>
+                        <div class="text-sm text-gray-300">{{ t.footer.tagline }}</div>
+                    </div>
+                </div>
+                <p class="text-gray-300 text-sm">{{ t.footer.description }}</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">{{ t.footer.quickLinks }}</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li><a href="#inicio" class="hover:text-forest-green transition">{{ t.footer.links.home }}</a></li>
+                    <li><a href="#sobre-mi" class="hover:text-forest-green transition">{{ t.footer.links.about }}</a></li>
+                    <li><a href="#servicios" class="hover:text-forest-green transition">{{ t.footer.links.services }}</a></li>
+                    <li><a href="#modalidades" class="hover:text-forest-green transition">{{ t.footer.links.modalities }}</a></li>
+                    <li><a href="#faq" class="hover:text-forest-green transition">{{ t.footer.links.faq }}</a></li>
+                    <li><a href="#reservar" class="hover:text-forest-green transition">{{ t.footer.links.book }}</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">{{ t.footer.contactSection }}</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li>{{ t.site.email }}</li>
+                    <li>+34 633 779 016</li>
+                    <li>{{ t.footer.location }}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
+            <p class="mb-3">
+                <a href="{{ t.footer.privacyUrl }}" class="hover:text-forest-green transition">{{ t.footer.links.privacy }}</a>
+            </p>
+            <p>© {% if lang == "es" %}2024{% else %}2024{% endif %} Rocío Touza Sánchez. {{ t.footer.copyright }} | {{ t.footer.credentials }}</p>
+        </div>
+    </div>
+</footer>
