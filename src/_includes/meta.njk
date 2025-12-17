@@ -1,0 +1,44 @@
+<title>{{ t.meta.title }}</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="{{ t.meta.description }}">
+<meta name="keywords" content="{{ t.meta.keywords }}">
+<meta name="author" content="{{ t.meta.author }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ t.meta.ogTitle }}">
+<meta property="og:description" content="{{ t.meta.ogDescription }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ t.site.url }}">
+<meta property="og:image" content="{{ t.meta.ogImage }}">
+<meta property="og:locale" content="{{ t.locale }}">
+
+<!-- SEO: Canonical and Hreflang Tags -->
+<link rel="canonical" href="{{ t.site.url }}" />
+<link rel="alternate" hreflang="es" href="https://rociotouzasanchez.com/" />
+<link rel="alternate" hreflang="en" href="https://rociotouzasanchez.com/en/" />
+<link rel="alternate" hreflang="x-default" href="https://rociotouzasanchez.com/" />
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Psychologist",
+    "name": "Rocío Touza Sánchez",
+    "url": "{{ t.site.url }}",
+    "inLanguage": "{{ lang }}",
+    "telephone": "{{ t.site.phone }}",
+    "email": "{{ t.site.email }}",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{{ t.site.location }}",
+        "addressCountry": "{{ t.site.countryCode }}"
+    },
+    "priceRange": "€€",
+    "description": "{{ t.meta.schemaDescription }}",
+    "areaServed": {
+        "@type": "Country",
+        "name": "{{ t.site.country }}"
+    }
+}
+</script>
