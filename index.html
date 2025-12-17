@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rocío Touza Sánchez - Psicóloga Online | Terapia con Enfoque Inclusivo</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Psicóloga en Barcelona. Terapia psicológica con orientación analítica, y sensibilidad social. Un espacio seguro donde pensar(se), elaborar malestares y así poder encontrar nuevas formas de estar.">
+<meta name="keywords" content="psicóloga online, terapia LGTBIQ+, psicóloga inclusiva, terapia diversidad, ansiedad, depresión, migración">
+<meta name="author" content="Rocío Touza Sánchez">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Rocío Touza Sánchez - Psicóloga Online">
+<meta property="og:description" content="Terapia psicológica online inclusiva y culturalmente sensible. Especializada en diversidad, LGTBIQ+ y procesos migratorios.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rociotouzasanchez.com">
+<meta property="og:image" content="https://rociotouzasanchez.com/og-image.jpg">
+<meta property="og:locale" content="es_ES">
+
+<!-- SEO: Canonical and Hreflang Tags -->
+<link rel="canonical" href="https://rociotouzasanchez.com" />
+<link rel="alternate" hreflang="es" href="https://rociotouzasanchez.com/" />
+<link rel="alternate" hreflang="en" href="https://rociotouzasanchez.com/en/" />
+<link rel="alternate" hreflang="x-default" href="https://rociotouzasanchez.com/" />
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Psychologist",
+    "name": "Rocío Touza Sánchez",
+    "url": "https://rociotouzasanchez.com",
+    "inLanguage": "es",
+    "telephone": "+34-633-779-016",
+    "email": "rociotouzasanchez@outlook.com",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Barcelona",
+        "addressCountry": "ES"
+    },
+    "priceRange": "€€",
+    "description": "Psicóloga online especializada en terapia inclusiva, diversidad LGTBIQ+ y procesos migratorios.",
+    "areaServed": {
+        "@type": "Country",
+        "name": "España"
+    }
+}
+</script>
+
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'forest-green': '#4D7C6A',
+                        'cream': '#F5F3E5',
+                        'navy': '#1D3557',
+                        'sage': '#93ADA1',
+                        'dark-gray': '#333333'
+                    },
+                    fontFamily: {
+                        'playfair': ['Open Sans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+                        'open-sans': ['Open Sans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+                        'sans': ['Open Sans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Open Sans Variable Font */
+        @font-face {
+            font-family: 'Open Sans';
+            src: url('fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype-variations');
+            font-weight: 300 800;
+            font-stretch: 75% 100%;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            src: url('fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype-variations');
+            font-weight: 300 800;
+            font-stretch: 75% 100%;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        .booking-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4D7C6A;
+            color: white;
+            border-radius: 50px;
+            padding: 15px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+        .booking-float:hover {
+            transform: scale(1.05);
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #4D7C6A;
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-cream text-dark-gray">
+
+    <!-- Navigation -->
+<nav class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <img src="images/logo.png" alt="Logo" class="w-10 h-10 object-contain">
+                <div>
+                    <div class="font-playfair text-navy text-lg leading-tight">Rocío Touza Sánchez</div>
+                    <div class="text-sm text-gray-600">Psicóloga</div>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#inicio" class="nav-link text-navy font-medium">Inicio</a>
+                <a href="#sobre-mi" class="nav-link text-navy font-medium">Sobre mí</a>
+                <a href="#servicios" class="nav-link text-navy font-medium">Servicios</a>
+                <a href="#modalidades" class="nav-link text-navy font-medium">Modalidades</a>
+                <a href="#faq" class="nav-link text-navy font-medium">Preguntas Frecuentes</a>
+                <a href="#reservar" class="nav-link text-navy font-medium">Reservar</a>
+
+                <!-- Language Switcher -->
+                <a href="/en/" class="px-4 py-2 bg-cream rounded-full font-medium hover:bg-opacity-90 transition inline-block">
+                    <span class="font-bold text-forest-green">ES</span>
+                    <span class="text-gray-400 mx-2">|</span>
+                    <span class="text-gray-400">EN</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden p-2" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+        <div class="px-4 py-4 space-y-3">
+            <a href="#inicio" class="block py-2 text-navy">Inicio</a>
+            <a href="#sobre-mi" class="block py-2 text-navy">Sobre mí</a>
+            <a href="#servicios" class="block py-2 text-navy">Servicios</a>
+            <a href="#modalidades" class="block py-2 text-navy">Modalidades</a>
+            <a href="#faq" class="block py-2 text-navy">Preguntas Frecuentes</a>
+            <a href="#reservar" class="block py-2 text-navy">Reservar</a>
+
+            <!-- Language Switcher for Mobile -->
+            <div class="mt-4 flex justify-center">
+                <a href="/en/" class="px-6 py-2 bg-cream rounded-full font-medium hover:bg-opacity-90 transition inline-block">
+                    <span class="font-bold text-forest-green">ES</span>
+                    <span class="text-gray-400 mx-2">|</span>
+                    <span class="text-gray-400">EN</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    
+<!-- Hero Section -->
+<section id="inicio" class="pt-32 pb-20 bg-gradient-to-br from-forest-green/10 to-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <h1 class="text-5xl md:text-6xl font-playfair text-navy mb-6 leading-tight">Un espacio seguro para pensar(se) y descubrir nuevas formas de estar.</h1>
+                <p class="text-xl text-gray-700 mb-8 leading-relaxed">Brindo acompañamiento profesional basado en la escucha profunda, la calidez y el respeto a la singularidad de cada proceso. Terapia psicológica inclusiva, social, y culturalmente sensible.</p>
+
+                <!-- Session Info (Price & Duration) -->
+                <div class="flex flex-wrap items-center gap-6 mb-6 text-gray-700">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+                        </svg>
+                        <span class="font-semibold">50 minutos</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"/>
+                        </svg>
+                        <span class="font-semibold">60€ por sesión</span>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="https://wa.me/34633779016?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20terapia%20online.%20%C2%BFPodr%C3%ADas%20ayudarme%3F" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 bg-forest-green text-white rounded-full font-semibold hover:bg-opacity-90 transition shadow-lg">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        <span>Reservar sesión</span>
+                    </a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex flex-col items-center gap-4">
+                <img src="images/portrait.jpeg"
+                     alt="Rocío Touza Sánchez - Psicóloga"
+                     class="w-72 h-72 md:w-[500px] md:h-[500px] rounded-full object-cover border-4 border-forest-green shadow-xl">
+                <div class="text-center">
+                    <p class="text-gray-600 text-sm">Psicóloga Colegiada</p>
+                    <p class="text-navy font-semibold text-lg">Nº 33914</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- About Me Section -->
+<section id="sobre-mi" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl md:text-5xl font-playfair font-bold text-navy mb-12 text-center">Sobre mí</h2>
+
+        <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+            
+            <p>Soy Rocío, psicóloga general sanitaria, dedicada con profundo compromiso y motivación a mi labor psicoterapéutica hace ya más de diez años. Sostengo con convicción que la formación continua funciona como pilar fundamental de mi práctica.</p>
+            
+            <p>Acompaño a personas que buscan un espacio donde poder hablar de lo que les sucede, comprenderlo y encontrar nuevas formas de estar. Mi trabajo parte de la escucha atenta y el cuidado de la subjetividad de cada persona.</p>
+            
+            <p>Entiendo que el malestar no surge de forma aislada, sino que se construye en relación con nuestra historia, nuestros vínculos y los contextos sociales y culturales que nos atraviesan. Por eso, mi práctica integra una mirada analítica con una gran sensibilidad hacia la diversidad, lo relacional y lo social.</p>
+            
+            <p>En sesión, ofrezco un espacio seguro donde puedas expresar, explorar y elaborar lo que te pueda estar afectando, sin juicios y a tu propio ritmo. Un lugar en el que poder pensar(se), poner en palabras lo que cuesta nombrar y elaborar aquello que genera malestar.</p>
+            
+            <p>¡Te espero!</p>
+            
+        </div>
+
+        <!-- Credentials & Education -->
+        <div class="mt-12 pt-8 border-t border-gray-200">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-2xl font-playfair font-semibold text-navy mb-4 text-center">
+                    Formación y Credenciales
+                </h3>
+                <p class="text-gray-600 leading-relaxed text-center mb-4">
+                    <span>Psicóloga General Sanitaria (nº 33914). Máster en Investigación e Intervención Psicosocial. Sexóloga Clínica.</span>
+                </p>
+                <div class="text-sm text-gray-500 space-y-2">
+                    
+                        
+                        
+                        <p>• Máster en Investigación e Intervención Psicosocial, Universitat Autònoma de Barcelona</p>
+                        
+                        <p>• Postgrado en Sexología Clínica, Universidad de Buenos Aires</p>
+                        
+                        <p>• Postgrado en Terapia Sexual Cognitivo Comportamental y Sistémica, Universidad de Buenos Aires</p>
+                        
+                        <p>• Postgrado en Psicoanálisis: Clínica de Adultos, Institución Fernando Ulloa</p>
+                        
+                        <p>• Licenciatura en Psicología, Universidad de Buenos Aires</p>
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Services Section - ACCORDION VERSION -->
+<section id="servicios" class="py-20 bg-cream">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl md:text-5xl font-playfair font-bold text-navy mb-6 text-center">Áreas de especialización</h2>
+        <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">Ofrezco acompañamiento psicológico en diversas áreas.<br>Haz clic para explorar cada categoría.</p>
+
+        <div class="space-y-4">
+            
+            
+            <!-- Category 1: Salud Emocional -->
+            <div class="accordion-item bg-white rounded-2xl shadow-md overflow-hidden">
+                <button class="accordion-header w-full flex items-center justify-between p-6 text-left hover:bg-forest-green/5 transition"
+                        onclick="toggleAccordion(this)">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-forest-green/20 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
+                                
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                                
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-playfair font-semibold text-navy">Salud Emocional</h3>
+                            <p class="text-sm text-gray-500 mt-1">Ansiedad, depresión, estrés, miedos, traumas y más</p>
+                        </div>
+                    </div>
+                    <svg class="accordion-icon w-6 h-6 text-navy transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+
+                <div class="accordion-content hidden">
+                    <div class="p-6 pt-0 grid md:grid-cols-2 gap-4">
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-forest-green mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Malestar emocional</h4>
+                                <p class="text-sm text-gray-600">Confusión, tristeza o agobio difícil de nombrar</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-forest-green mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Ansiedad</h4>
+                                <p class="text-sm text-gray-600">Preocupaciones, ataques de pánico, síntomas físicos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-forest-green mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Depresión</h4>
+                                <p class="text-sm text-gray-600">Tristeza profunda, pérdida de interés, falta de energía</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-forest-green mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Estrés</h4>
+                                <p class="text-sm text-gray-600">Gestión del estrés laboral, académico y cotidiano</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-forest-green mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Miedos</h4>
+                                <p class="text-sm text-gray-600">Fobias y preocupaciones que limitan tu día a día</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-forest-green mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Traumas</h4>
+                                <p class="text-sm text-gray-600">Experiencias difíciles del pasado que afectan tu presente</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Category 2: Relaciones y Transiciones Vitales -->
+            <div class="accordion-item bg-white rounded-2xl shadow-md overflow-hidden">
+                <button class="accordion-header w-full flex items-center justify-between p-6 text-left hover:bg-sage/5 transition"
+                        onclick="toggleAccordion(this)">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-sage/20 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-sage" fill="currentColor" viewBox="0 0 24 24">
+                                
+                                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                                
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-playfair font-semibold text-navy">Relaciones y Transiciones Vitales</h3>
+                            <p class="text-sm text-gray-500 mt-1">Pareja, duelos, crisis, trabajo y cambios importantes</p>
+                        </div>
+                    </div>
+                    <svg class="accordion-icon w-6 h-6 text-navy transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+
+                <div class="accordion-content hidden">
+                    <div class="p-6 pt-0 grid md:grid-cols-2 gap-4">
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-sage mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Dificultades en la pareja</h4>
+                                <p class="text-sm text-gray-600">Conflictos, desgaste o dudas sobre la relación</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-sage mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Duelos</h4>
+                                <p class="text-sm text-gray-600">Pérdidas de seres queridos, relaciones o proyectos de vida</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-sage mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Crisis vitales</h4>
+                                <p class="text-sm text-gray-600">Transiciones importantes y momentos de cambio vital</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-sage mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Dificultades en el trabajo</h4>
+                                <p class="text-sm text-gray-600">Conflictos laborales, agotamiento o burnout</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-sage mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Sexualidad</h4>
+                                <p class="text-sm text-gray-600">Dificultades sexuales y dudas sobre orientación</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Category 3: Identidad y Diversidad -->
+            <div class="accordion-item bg-white rounded-2xl shadow-md overflow-hidden">
+                <button class="accordion-header w-full flex items-center justify-between p-6 text-left hover:bg-navy/5 transition"
+                        onclick="toggleAccordion(this)">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-navy/20 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-navy" fill="currentColor" viewBox="0 0 24 24">
+                                
+                                <path d="M16,11C17.66,11 18.99,9.66 18.99,8C18.99,6.34 17.66,5 16,5C14.34,5 13,6.34 13,8C13,9.66 14.34,11 16,11M8,11C9.66,11 10.99,9.66 10.99,8C10.99,6.34 9.66,5 8,5C6.34,5 5,6.34 5,8C5,9.66 6.34,11 8,11M8,13C5.67,13 1,14.17 1,16.5V19H15V16.5C15,14.17 10.33,13 8,13M16,13C15.71,13 15.38,13.02 15.03,13.05C16.19,13.89 17,15.02 17,16.5V19H23V16.5C23,14.17 18.33,13 16,13Z"/>
+                                
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-playfair font-semibold text-navy">Identidad y Diversidad</h3>
+                            <p class="text-sm text-gray-500 mt-1">Género, LGTBIQ+, migración, diversidad cultural y social</p>
+                        </div>
+                    </div>
+                    <svg class="accordion-icon w-6 h-6 text-navy transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+
+                <div class="accordion-content hidden">
+                    <div class="p-6 pt-0 grid md:grid-cols-2 gap-4">
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-navy mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Género</h4>
+                                <p class="text-sm text-gray-600">Exploración de identidad y expresión de género</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-navy mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">LGTBIQ+</h4>
+                                <p class="text-sm text-gray-600">Espacio afirmativo para procesos de autoconocimiento</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-navy mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Diversidad</h4>
+                                <p class="text-sm text-gray-600">Experiencias de discriminación y minorización</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-navy mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Migración</h4>
+                                <p class="text-sm text-gray-600">Adaptación cultural y sentimientos de desarraigo</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-5 h-5 text-navy mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-1">Condiciones sociales</h4>
+                                <p class="text-sm text-gray-600">Impacto de factores sociales y estructurales</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!-- Modalities Section -->
+<section id="modalidades" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl md:text-5xl font-playfair font-bold text-navy mb-6 text-center">Modalidades</h2>
+        <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">Ofrezco terapia online (modalidad principal) y presencial con disponibilidad limitada en Barcelona.</p>
+
+        <!-- Shared Information Grid (3 cards) -->
+        <div class="grid md:grid-cols-3 gap-6 mb-16">
+            <!-- Duration Card -->
+            <div class="bg-forest-green/10 rounded-2xl p-8">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-12 h-12 bg-forest-green rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-playfair font-semibold text-navy mb-2">Duración</h3>
+                        <p class="text-gray-700">Cada sesión dura 50 minutos, tiempo suficiente para trabajar en profundidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Card -->
+            <div class="bg-sage/10 rounded-2xl p-8">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-12 h-12 bg-sage rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-playfair font-semibold text-navy mb-2">Precio</h3>
+                        <p class="text-gray-700">60€ por sesión. Posibilidad de adaptar la frecuencia según tus necesidades.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cancellations Card -->
+            <div class="bg-forest-green/10 rounded-2xl p-8">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-12 h-12 bg-forest-green rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-playfair font-semibold text-navy mb-2">Cancelaciones</h3>
+                        <p class="text-gray-700">Se requiere avisar con 24 horas de antelación. De lo contrario, la sesión debe abonarse.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Online Therapy Subsection -->
+        <div class="bg-forest-green/5 rounded-3xl p-8 md:p-10 mb-12">
+            <!-- Heading with Badge -->
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                <h3 class="text-2xl md:text-3xl font-playfair font-bold text-navy mb-3 md:mb-0">Terapia Online</h3>
+                <span class="inline-flex items-center px-4 py-2 rounded-full bg-forest-green text-white text-sm font-semibold">Modalidad principal</span>
+            </div>
+
+            <!-- Description -->
+            <p class="text-gray-700 mb-8 leading-relaxed">Las sesiones online ofrecen la misma calidad que las presenciales, con la comodidad de conectar desde donde te sientas seguro. Puedes acceder a terapia desde cualquier lugar con conexión a internet.</p>
+
+            <!-- Platform Card -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17,10.5V7A1,1 0 0,0 16,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16A1,1 0 0,0 17,17V13.5L21,17.5V6.5L17,10.5Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-playfair font-semibold text-navy mb-2">Plataforma</h4>
+                        <p class="text-gray-700">Sesiones por Google Meet: fácil de usar, segura y sin necesidad de instalar aplicaciones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visual Separator -->
+        <div class="relative my-12">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t-2 border-gray-200"></div>
+            </div>
+            <div class="relative flex justify-center">
+                <span class="bg-white px-6 py-2 rounded-full border-2 border-sage">
+                    <span class="text-lg font-playfair font-semibold text-navy">También disponible</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- In-Person Therapy Subsection -->
+        <div class="bg-sage/5 rounded-3xl p-8 md:p-10 mb-12">
+            <!-- Heading with Badge -->
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                <h3 class="text-xl md:text-2xl font-playfair font-bold text-navy mb-3 md:mb-0">Terapia Presencial</h3>
+                <span class="inline-flex items-center px-4 py-2 rounded-full bg-sage text-white text-sm font-semibold">Disponibilidad limitada</span>
+            </div>
+
+            <!-- Description -->
+            <p class="text-gray-700 mb-8 leading-relaxed">Si prefieres las sesiones en persona, ofrezco un espacio acogedor en Barcelona. Debido a la disponibilidad limitada, te invito a contactarme para consultar cupos disponibles.</p>
+
+            <!-- Location Card -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-playfair font-semibold text-navy mb-2">Ubicación</h4>
+                        <p class="text-gray-700">Carrer de Sardenya, 326, L&#39;Eixample, 08025 Barcelona (zona Sagrada Familia)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking CTA -->
+        <div class="text-center mt-12">
+            <a href="https://wa.me/34633779016?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20terapia%20online.%20%C2%BFPodr%C3%ADas%20ayudarme%3F" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 bg-forest-green text-white rounded-full font-semibold hover:bg-opacity-90 transition shadow-lg text-lg">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                <span>Reservar sesión</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FAQ Section -->
+<section id="faq" class="py-20 bg-cream">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-playfair font-bold text-navy mb-4">Preguntas Frecuentes</h2>
+            <p class="text-xl text-gray-600">Respuestas a las dudas más comunes sobre terapia</p>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="space-y-4">
+            
+            <!-- Question 1 -->
+            <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
+                        aria-expanded="false">
+                    <span class="font-semibold text-navy text-lg pr-4">¿Cómo funciona la terapia online?</span>
+                    <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 pb-5 text-gray-700 leading-relaxed hidden">
+                    
+                    <p>Las sesiones se realizan por videollamada a través de Google Meet. Simplemente necesitas un dispositivo con cámara, micrófono e internet estable. Te enviaré el enlace de la sesión por email antes de cada cita.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Question 2 -->
+            <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
+                        aria-expanded="false">
+                    <span class="font-semibold text-navy text-lg pr-4">¿Qué necesito para las sesiones online?</span>
+                    <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 pb-5 text-gray-700 leading-relaxed hidden">
+                    
+                    <p>Un lugar tranquilo y privado donde te sientas cómodo/a, conexión a internet estable, y un dispositivo (ordenador, tablet o móvil) con cámara y micrófono.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Question 3 -->
+            <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
+                        aria-expanded="false">
+                    <span class="font-semibold text-navy text-lg pr-4">¿Cómo reservo mi primera sesión?</span>
+                    <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 pb-5 text-gray-700 leading-relaxed hidden">
+                    
+                    <p>Contáctame por WhatsApp o email. Coordinaremos juntos el día y hora que mejor te funcione.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Question 4 -->
+            <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
+                        aria-expanded="false">
+                    <span class="font-semibold text-navy text-lg pr-4">¿Puedo cancelar o reprogramar una sesión?</span>
+                    <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 pb-5 text-gray-700 leading-relaxed hidden">
+                    
+                    <p>Sí, siempre que avises con al menos 24 horas de antelación. Si cancelas con menos de 24 horas, la sesión deberá abonarse.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Question 5 -->
+            <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
+                        aria-expanded="false">
+                    <span class="font-semibold text-navy text-lg pr-4">¿La terapia online es tan efectiva como la presencial?</span>
+                    <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 pb-5 text-gray-700 leading-relaxed hidden">
+                    
+                    <p>Sí. Numerosos estudios demuestran que la terapia online es igual de efectiva que la presencial. Lo más importante es la conexión terapéutica y tu compromiso con el proceso.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Question 6 -->
+            <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
+                        aria-expanded="false">
+                    <span class="font-semibold text-navy text-lg pr-4">¿Ofrecés terapia presencial?</span>
+                    <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 pb-5 text-gray-700 leading-relaxed hidden">
+                    
+                    <p>Sí, aunque la terapia online es mi modalidad principal, también ofrezco sesiones presenciales en Barcelona (zona Sagrada Familia) con disponibilidad limitada. Si te interesa esta opción, contáctame para consultar cupos disponibles.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Question 7 -->
+            <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
+                        aria-expanded="false">
+                    <span class="font-semibold text-navy text-lg pr-4">¿Es confidencial?</span>
+                    <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 pb-5 text-gray-700 leading-relaxed hidden">
+                    
+                    
+                    <p>Absolutamente. Todo lo que compartimos está protegido por el secreto profesional y el código deontológico del psicólogo. Tus datos están protegidos según la RGPD.</p>
+                    <p class="mt-2">
+                        <a href="/politica-privacidad.html" class="text-forest-green hover:underline font-medium">
+                            Ver Política de Privacidad →
+                        </a>
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <!-- Question 8 -->
+            <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
+                        aria-expanded="false">
+                    <span class="font-semibold text-navy text-lg pr-4">¿Recetas medicamentos?</span>
+                    <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 pb-5 text-gray-700 leading-relaxed hidden">
+                    
+                    <p>No. Como psicóloga, no prescribo medicación. Si considero que puede ser beneficioso, puedo recomendarte que consultes con un psiquiatra que trabaje en colaboración con la terapia.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Question 9 -->
+            <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
+                        aria-expanded="false">
+                    <span class="font-semibold text-navy text-lg pr-4">¿Trabajas con seguros médicos?</span>
+                    <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 pb-5 text-gray-700 leading-relaxed hidden">
+                    
+                    <p>Actualmente no trabajo con aseguradoras, pero colaboro con centros que sí lo hacen. Si te interesa esta opción, podés consultarme por privado para brindarte más información.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Question 10 -->
+            <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
+                        aria-expanded="false">
+                    <span class="font-semibold text-navy text-lg pr-4">¿Qué pasa en la primera sesión?</span>
+                    <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 pb-5 text-gray-700 leading-relaxed hidden">
+                    
+                    <p>Sé que no siempre es fácil decidirse a empezar terapia. En la primera sesión tendrás un espacio para poder contar qué te trae a consulta. Me interesa conocer también el recorrido que te llevó hasta este momento. Te escucharé atentamente, sin juicios ni prisas, y podrás preguntarme lo que necesites sobre mi forma de trabajar. Ese primer encuentro nos permitirá ver si mi forma de trabajar encaja con lo que estás buscando.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Question 11 -->
+            <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
+                        aria-expanded="false">
+                    <span class="font-semibold text-navy text-lg pr-4">¿Cómo sé si eres la terapeuta adecuada para mí?</span>
+                    <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 pb-5 text-gray-700 leading-relaxed hidden">
+                    
+                    <p>La conexión terapéutica es un aspecto fundamental del trabajo psicológico. Cada persona tiene necesidades distintas y no todas las personas se sienten cómodas con los mismos enfoques o marcos teóricos. Por eso, las primeras sesiones serán fundamentales en este sentido ya que nos permitirán explorar tus necesidades y mi forma de trabajar. Si sientes que no es el ajuste adecuado para ti, lo entenderé y podré orientarte hacia otras opciones que se ajusten mejor a lo que buscas. Mi objetivo es que encuentres un espacio seguro y significativo para tu proceso.</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Question 12 -->
+            <div class="faq-item bg-white rounded-xl border border-gray-200 overflow-hidden">
+                <button class="faq-question w-full text-left px-6 py-5 flex justify-between items-center hover:bg-forest-green/5 transition group"
+                        aria-expanded="false">
+                    <span class="font-semibold text-navy text-lg pr-4">¿Atiendes en otros idiomas?</span>
+                    <svg class="faq-icon w-6 h-6 text-forest-green transform transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+                <div class="faq-answer px-6 pb-5 text-gray-700 leading-relaxed hidden">
+                    
+                    <p>Ofrezco terapia en español e inglés. Si tienes dudas sobre tu caso particular, contáctame y lo valoramos juntos.</p>
+                    
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Booking Section -->
+<section id="reservar" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl md:text-5xl font-playfair font-bold text-navy mb-6 text-center">Reserva tu sesión</h2>
+        <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">Contáctame directamente por WhatsApp o email para reservar tu sesión. Te responderé lo antes posible para coordinar día y hora.</p>
+
+        <!-- Direct Contact Booking (Cookie-Free) -->
+        <div class="max-w-2xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-6 justify-items-center">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/34633779016?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20terapia%20online.%20%C2%BFPodr%C3%ADas%20ayudarme%3F"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="flex flex-col items-center gap-4 p-8 bg-gradient-to-br from-[#25D366]/10 to-[#25D366]/5 rounded-2xl border-2 border-[#25D366]/20 hover:border-[#25D366] hover:shadow-lg transition w-full max-w-sm">
+                    <div class="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">WhatsApp</h4>
+                        <p class="text-gray-600 mb-3">Respuesta rápida y directa</p>
+                        <span class="inline-block px-4 py-2 bg-[#25D366] text-white rounded-full font-semibold">Enviar mensaje</span>
+                    </div>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:rociotouzasanchez@outlook.com?subject=Consulta%20sobre%20terapia%20online&body=Hola%20Roc%C3%ADo%2C%0A%0AMe%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20terapia%20online.%0A%0AGracias."
+                   class="flex flex-col items-center gap-4 p-8 bg-gradient-to-br from-navy/10 to-navy/5 rounded-2xl border-2 border-navy/20 hover:border-navy hover:shadow-lg transition w-full max-w-sm">
+                    <div class="w-16 h-16 bg-navy rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Email</h4>
+                        <p class="text-gray-600 mb-3">rociotouzasanchez@outlook.com</p>
+                        <span class="inline-block px-4 py-2 bg-navy text-white rounded-full font-semibold">Enviar email</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Google Review CTA Section -->
+<section id="reviews" class="py-12 md:py-16 bg-gradient-to-br from-sage/30 to-cream/50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+        <!-- Star Icon Cluster -->
+        <div class="flex gap-1 mb-4 justify-center opacity-80">
+            
+            <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/>
+            </svg>
+            
+            <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/>
+            </svg>
+            
+            <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/>
+            </svg>
+            
+            <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/>
+            </svg>
+            
+            <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/>
+            </svg>
+            
+        </div>
+
+        <!-- Heading -->
+        <h3 class="text-3xl md:text-4xl font-playfair font-semibold text-navy mb-4">Sobre el proceso terapéutico</h3>
+
+        <!-- Subheading -->
+        <p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-2xl mx-auto">Tu experiencia puede ayudar a otros a encontrar el apoyo que necesitan. Si te gustaría compartir algo de tu experiencia terapéutica actual o pasada, puedes dejar unas palabras aquí - hazlo con total libertad, es simplemente una posibilidad para quienes deseen hacerlo.</p>
+
+        <!-- CTA Button -->
+        <a href="https://g.page/r/CRpj352A4OBHEBI/review"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-6 py-3 bg-forest-green/90 text-white rounded-full font-semibold hover:bg-forest-green transition shadow-md hover:shadow-lg hover:-translate-y-1 duration-200"
+           aria-label="Dejar reseña en Google Maps">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.06,9L15,9.94L5.92,19H5V18.08L14.06,9M17.66,3C17.41,3 17.15,3.1 16.96,3.29L15.13,5.12L18.88,8.87L20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18.17,3.09 17.92,3 17.66,3M14.06,6.19L3,17.25V21H6.75L17.81,9.94L14.06,6.19Z"/>
+            </svg>
+            <span>Compartir mi experiencia</span>
+        </a>
+
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+<footer class="bg-navy text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="images/logo.png" alt="Logo" class="w-8 h-8 object-contain">
+                    <div>
+                        <div class="font-playfair text-lg">Rocío Touza Sánchez</div>
+                        <div class="text-sm text-gray-300">Psicóloga</div>
+                    </div>
+                </div>
+                <p class="text-gray-300 text-sm">Terapia psicodinámica contemporánea y socialmente sensible en Barcelona</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">Enlaces rápidos</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li><a href="#inicio" class="hover:text-forest-green transition">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="hover:text-forest-green transition">Sobre mí</a></li>
+                    <li><a href="#servicios" class="hover:text-forest-green transition">Servicios</a></li>
+                    <li><a href="#modalidades" class="hover:text-forest-green transition">Modalidades</a></li>
+                    <li><a href="#faq" class="hover:text-forest-green transition">Preguntas Frecuentes</a></li>
+                    <li><a href="#reservar" class="hover:text-forest-green transition">Reservar</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">Contacto</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li>rociotouzasanchez@outlook.com</li>
+                    <li>+34 633 779 016</li>
+                    <li>Barcelona, España</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
+            <p class="mb-3">
+                <a href="/politica-privacidad.html" class="hover:text-forest-green transition">Política de Privacidad</a>
+            </p>
+            <p>© 2024 Rocío Touza Sánchez. Todos los derechos reservados. | Psicóloga colegiada núm. 33914</p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Booking Floating Button -->
+<a href="https://wa.me/34633779016?text=Hola%20Roc%C3%ADo%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20de%20terapia%20online.%20%C2%BFPodr%C3%ADas%20ayudarme%3F" target="_blank" rel="noopener noreferrer" class="booking-float" aria-label="Reservar sesión por WhatsApp">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span class="hidden md:inline">Reservar sesión</span>
+</a>
+
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                const isExpanded = !mobileMenu.classList.contains('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', isExpanded);
+            });
+
+            // Close mobile menu when clicking a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('.faq-icon');
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+                // Close all other open FAQs
+                document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+                    if (otherAnswer !== answer) {
+                        otherAnswer.classList.add('hidden');
+                        otherAnswer.previousElementSibling.setAttribute('aria-expanded', 'false');
+                        otherAnswer.previousElementSibling.querySelector('.faq-icon').style.transform = '';
+                    }
+                });
+
+                // Toggle current FAQ
+                answer.classList.toggle('hidden');
+                button.setAttribute('aria-expanded', !isExpanded);
+                icon.style.transform = !isExpanded ? 'rotate(180deg)' : '';
+            });
+        });
+
+        // Services Accordion (toggleAccordion function)
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.accordion-icon');
+            const isOpen = !content.classList.contains('hidden');
+
+            // Close all accordions
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                item.classList.add('hidden');
+            });
+            document.querySelectorAll('.accordion-icon').forEach(item => {
+                item.style.transform = '';
+            });
+
+            // Open clicked accordion if it was closed
+            if (!isOpen) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offset = 80; // Height of fixed nav
+                        const targetPosition = target.offsetTop - offset;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
