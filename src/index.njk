@@ -1,0 +1,23 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'es' %}index.html{% else %}{{ lang }}/index.html{% endif %}"
+layout: layouts/base.njk
+languages:
+  - es
+  - en
+---
+
+{% include "components/hero.njk" %}
+
+{% include "components/about.njk" %}
+
+{% include "components/services.njk" %}
+
+{% include "components/modalities.njk" %}
+
+{% include "components/faq.njk" %}
+
+{% include "components/booking.njk" %}

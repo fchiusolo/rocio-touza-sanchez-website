@@ -11,3 +11,9 @@ Thumbs.db
 # Backup files
 *.bak
 *~
+
+# Node.js
+node_modules/
+
+# Build output
+_site/

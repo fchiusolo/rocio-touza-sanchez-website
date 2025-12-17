@@ -1,0 +1,265 @@
+{
+  "lang": "en",
+  "locale": "en_US",
+  "site": {
+    "title": "Rocío Touza Sánchez - Online Psychologist",
+    "url": "https://rociotouzasanchez.com/en/",
+    "phone": "+34-633-779-016",
+    "email": "rociotouzasanchez@outlook.com",
+    "location": "Barcelona",
+    "country": "Spain",
+    "countryCode": "ES"
+  },
+  "meta": {
+    "title": "Rocío Touza Sánchez - Online Psychologist | Inclusive Therapy",
+    "description": "Psychologist in Barcelona. Psychodynamic therapy with analytical orientation and social sensitivity. A safe space to think, process difficulties, and discover new ways of being.",
+    "keywords": "online psychologist, LGBTIQ+ therapy, inclusive therapy, diversity, anxiety, depression, migration, Barcelona",
+    "author": "Rocío Touza Sánchez",
+    "ogTitle": "Rocío Touza Sánchez - Online Psychologist",
+    "ogDescription": "Inclusive and culturally sensitive online psychological therapy. Specialized in diversity, LGBTIQ+, and migratory processes.",
+    "ogImage": "https://rociotouzasanchez.com/og-image.jpg",
+    "schemaDescription": "Online psychologist specialized in inclusive therapy, LGBTIQ+ diversity, and migratory processes."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "modalities": "Modalities",
+    "faq": "FAQ",
+    "book": "Book",
+    "ariaMenuLabel": "Open navigation menu"
+  },
+  "hero": {
+    "title": "A safe space to think (about yourself) and discover new ways of being.",
+    "subtitle": "I provide professional support based on deep listening, warmth, and respect for the uniqueness of each process. Inclusive, social, and culturally sensitive psychological therapy.",
+    "sessionDuration": "50 minutes",
+    "sessionPrice": "€60 per session",
+    "ctaPrimary": "Book a session",
+    "ctaSecondary": "Learn more"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Hello! I'm Rocío",
+    "bio": [
+      "I'm Rocío, a general health psychologist, dedicated with deep commitment and motivation to my psychotherapeutic work for over ten years. I firmly believe that continuous training is a fundamental pillar of my practice.",
+      "I accompany people seeking a space where they can talk about what's happening to them, understand it, and find new ways of being. My work is based on attentive listening and caring for each person's subjectivity.",
+      "I understand that distress doesn't arise in isolation, but is constructed in relation to our history, our relationships, and the social and cultural contexts that shape us. Therefore, my practice integrates an analytical perspective with great sensitivity to diversity, relationships, and social aspects.",
+      "In session, I offer a safe space where you can express, explore, and process what may be affecting you, without judgment and at your own pace. A place where you can think (about yourself), put into words what's hard to name, and work through what causes distress.",
+      "I look forward to meeting you!"
+    ],
+    "credentials": "Licensed General Health Psychologist (no. 33914). Master's in Psychosocial Research and Intervention. Clinical Sexologist.",
+    "training": "Master's in Psychosocial Research and Intervention, Universitat Autònoma de Barcelona | Postgraduate in Clinical Sexology, Universidad de Buenos Aires | Postgraduate in Cognitive Behavioral and Systemic Sexual Therapy, Universidad de Buenos Aires | Postgraduate in Psychoanalysis: Adult Clinical Practice, Institución Fernando Ulloa | Bachelor's Degree in Psychology, Universidad de Buenos Aires"
+  },
+  "services": {
+    "title": "Areas of specialization",
+    "subtitle": "I offer psychological support in various areas.\nClick to explore each category.",
+    "categories": [
+      {
+        "name": "Emotional Health",
+        "description": "Anxiety, depression, stress, fears, trauma, and more",
+        "items": [
+          {
+            "title": "Emotional distress",
+            "description": "Confusion, sadness, or overwhelming emotions"
+          },
+          {
+            "title": "Anxiety",
+            "description": "Worries, panic attacks, physical symptoms"
+          },
+          {
+            "title": "Depression",
+            "description": "Deep sadness, loss of interest, lack of energy"
+          },
+          {
+            "title": "Stress",
+            "description": "Managing work, academic, and daily stress"
+          },
+          {
+            "title": "Fears",
+            "description": "Phobias and worries that limit daily life"
+          },
+          {
+            "title": "Trauma",
+            "description": "Difficult past experiences affecting your present"
+          }
+        ]
+      },
+      {
+        "name": "Relationships & Life Transitions",
+        "description": "Relationships, grief, crises, work, and major changes",
+        "items": [
+          {
+            "title": "Relationship difficulties",
+            "description": "Conflicts, wear, or relationship doubts"
+          },
+          {
+            "title": "Grief",
+            "description": "Loss of loved ones, relationships, or life projects"
+          },
+          {
+            "title": "Life crises",
+            "description": "Important transitions and life change moments"
+          },
+          {
+            "title": "Work difficulties",
+            "description": "Work conflicts, exhaustion, or burnout"
+          },
+          {
+            "title": "Sexuality",
+            "description": "Sexual difficulties and orientation questions"
+          }
+        ]
+      },
+      {
+        "name": "Identity & Diversity",
+        "description": "Gender, LGBTIQ+, migration, cultural and social diversity",
+        "items": [
+          {
+            "title": "Gender",
+            "description": "Exploring gender identity and expression"
+          },
+          {
+            "title": "LGBTIQ+",
+            "description": "Affirmative space for self-discovery processes"
+          },
+          {
+            "title": "Diversity",
+            "description": "Experiences of discrimination and minoritization"
+          },
+          {
+            "title": "Migration",
+            "description": "Cultural adaptation and feelings of uprooting"
+          },
+          {
+            "title": "Social conditions",
+            "description": "Impact of social and structural factors"
+          }
+        ]
+      }
+    ]
+  },
+  "modalities": {
+    "title": "Modalities",
+    "subtitle": "I offer online therapy (primary modality) and in-person therapy with limited availability in Barcelona.",
+    "online": {
+      "title": "Online Therapy",
+      "badge": "Primary modality",
+      "description": "Online sessions offer the same quality as in-person sessions, with the comfort of connecting from wherever you feel safe. You can access therapy from anywhere with internet connection.",
+      "platform": "Platform",
+      "platformDescription": "Sessions via Google Meet: easy to use, secure, and no need to install apps."
+    },
+    "inPerson": {
+      "title": "In-Person Therapy",
+      "badge": "Limited availability",
+      "description": "If you prefer in-person sessions, I offer a welcoming space in Barcelona. Due to limited availability, I invite you to contact me to check available slots.",
+      "location": "Location",
+      "locationAddress": "Carrer de Sardenya, 326, L'Eixample, 08025 Barcelona (Sagrada Familia area)"
+    },
+    "pricing": {
+      "title": "Duration",
+      "sessionDuration": "Each session lasts 50 minutes, enough time to work in depth.",
+      "priceTitle": "Price",
+      "sessionPrice": "€60 per session. Possibility to adjust frequency according to your needs.",
+      "cancellationsTitle": "Cancellations",
+      "cancellationsPolicy": "24 hours notice required. Otherwise, the session must be paid for."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to the most common questions about therapy",
+    "items": [
+      {
+        "question": "How does online therapy work?",
+        "answer": "Sessions are conducted via Google Meet video call. You just need a device with a camera, microphone, and stable internet. I'll send you the session link by email before each appointment."
+      },
+      {
+        "question": "What do I need for online sessions?",
+        "answer": "A quiet, private place where you feel comfortable, stable internet connection, and a device (computer, tablet, or phone) with camera and microphone."
+      },
+      {
+        "question": "How do I book my first session?",
+        "answer": "Contact me via WhatsApp or email. We'll coordinate the day and time that works best for you."
+      },
+      {
+        "question": "Can I cancel or reschedule a session?",
+        "answer": "Yes, as long as you notify me at least 24 hours in advance. Cancellations with less than 24 hours notice must be paid."
+      },
+      {
+        "question": "Is online therapy as effective as in-person?",
+        "answer": "Yes. Numerous studies show that online therapy is as effective as in-person therapy. The most important factors are the therapeutic connection and your commitment to the process."
+      },
+      {
+        "question": "Do you offer in-person therapy?",
+        "answer": "Yes, although online therapy is my primary modality, I also offer in-person sessions in Barcelona (Sagrada Familia area) with limited availability. If you're interested in this option, contact me to check available slots."
+      },
+      {
+        "question": "Is it confidential?",
+        "answer": "Absolutely. Everything we share is protected by professional secrecy and the psychologist's code of ethics. Your data is protected under GDPR."
+      },
+      {
+        "question": "Do you prescribe medication?",
+        "answer": "No. As a psychologist, I don't prescribe medication. If I consider it might be beneficial, I can recommend consulting with a psychiatrist who works collaboratively with therapy."
+      },
+      {
+        "question": "Do you work with health insurance?",
+        "answer": "I currently don't work with insurance companies, but I collaborate with centers that do. If you're interested in this option, you can contact me privately for more information."
+      },
+      {
+        "question": "What happens in the first session?",
+        "answer": "I know it's not always easy to decide to start therapy. In the first session, you'll have space to share what brings you to consultation. I'm also interested in understanding the journey that led you to this moment. I'll listen to you attentively, without judgment or rush, and you can ask me whatever you need about how I work. That first meeting will allow us to see if my way of working fits with what you're looking for."
+      },
+      {
+        "question": "How do I know if you're the right therapist for me?",
+        "answer": "The therapeutic connection is a fundamental aspect of psychological work. Each person has different needs and not everyone feels comfortable with the same approaches or theoretical frameworks. That's why the first sessions will be fundamental in this sense, as they will allow us to explore your needs and how I work. If you feel it's not the right fit for you, I'll understand and can guide you toward other options that better suit what you're looking for. My goal is for you to find a safe and meaningful space for your process."
+      },
+      {
+        "question": "Do you offer therapy in other languages?",
+        "answer": "I offer therapy in Spanish and English. If you have questions about your particular case, contact me and we'll discuss it together."
+      }
+    ]
+  },
+  "reviews": {
+    "title": "About the therapeutic process",
+    "subtitle": "Your experience can help others find the support they need. If you'd like to share something about your current or past therapeutic experience, you can leave a few words here - do so with complete freedom, it's simply an option for those who wish to do so.",
+    "ctaText": "Share my experience",
+    "googleMapsUrl": "https://g.page/r/CRpj352A4OBHEBI/review"
+  },
+  "book": {
+    "title": "Book your session",
+    "subtitle": "Contact me directly via WhatsApp or email to book your session. I'll respond as soon as possible to coordinate date and time.",
+    "whatsappCta": "WhatsApp",
+    "whatsappSubtitle": "Fast and direct response",
+    "whatsappButton": "Send message",
+    "emailCta": "Email",
+    "emailSubtitle": "rociotouzasanchez@outlook.com",
+    "emailButton": "Send email"
+  },
+  "contact": {
+    "whatsappMessage": "Hi Rocío, I would like to book an online therapy session. Could you help me?",
+    "whatsappShortMessage": "Hi Rocío, I would like to book a session. Could you help me?",
+    "emailSubject": "Inquiry about online therapy",
+    "emailBody": "Hi Rocío,\n\nI would like to book an online therapy session.\n\nThank you.",
+    "ariaWhatsapp": "Book a session via WhatsApp",
+    "ariaEmail": "Send email"
+  },
+  "footer": {
+    "tagline": "Psicóloga",
+    "description": "Contemporary psychodynamic and socially sensitive therapy in Barcelona",
+    "quickLinks": "Quick links",
+    "contactSection": "Contact",
+    "legalSection": "Legal",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "modalities": "Modalities",
+      "faq": "FAQ",
+      "book": "Book",
+      "privacy": "Privacy Policy"
+    },
+    "credentials": "Licensed psychologist no. 33914",
+    "location": "Barcelona, España",
+    "privacyUrl": "/en/privacy-policy.html",
+    "copyright": "All rights reserved."
+  }
+}
