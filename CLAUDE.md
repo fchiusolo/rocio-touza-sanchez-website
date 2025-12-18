@@ -5,7 +5,7 @@
 **Project**: Bilingual psychology website for Rocío Touza Sanchez
 **Live**: https://rociotouzasanchez.com
 **Tech**: 11ty + Nunjucks + JSON + Tailwind CSS + Vanilla JS
-**Hosting**: GitHub Pages (auto-deploy from main branch)
+**Hosting**: GitHub Pages (served from gh-pages branch, auto-deployed on push to main)
 
 **Setup**: `npm install` → `npm run serve` (dev) or `npm run build` (production)
 
