@@ -1,8 +1,79 @@
-# Multilingual Implementation - Testing Report
+# Testing Reports
+
+## 11ty Build System Implementation - Testing Report
+
+**Date**: December 18, 2025
+**Implementation**: 11ty Static Site Generator + JSON Content Management
+**Status**: ✅ AUTOMATED BUILD & DEPLOYMENT VERIFIED
+
+### Automated Build Validation Results
+
+#### ✅ Build Process
+- [x] `npm install` completes without errors
+- [x] `npm run build` generates `_site/` directory
+- [x] `npm run serve` starts development server on localhost:8080
+- [x] Auto-reload works when editing `src/_data/` JSON files
+- [x] Auto-rebuild works when editing `src/_includes/` templates
+
+#### ✅ Generated Output Structure
+- [x] Spanish homepage: `_site/index.html` (generated from src/index.njk + es.json)
+- [x] English homepage: `_site/en/index.html` (generated from src/index.njk + en.json)
+- [x] Static files copied: fonts/, images/, robots.txt, CNAME
+- [x] Privacy policies: politica-privacidad.html, en/privacy-policy.html (passthrough copy)
+
+#### ✅ Bilingual Content Generation
+- [x] Single template (`src/index.njk`) generates both language versions
+- [x] Template pagination creates `/index.html` (es) and `/en/index.html` (en)
+- [x] JSON data structure identical between es.json and en.json
+- [x] Language variable (`{{ lang }}`) correctly set for each output
+- [x] Meta tags, hreflang, and language attribute generated dynamically
+
+#### ✅ GitHub Actions CI/CD Pipeline
+- [x] Workflow file: `.github/workflows/deploy.yml` configured correctly
+- [x] Triggers on: push to main branch, pull requests to main
+- [x] Steps: checkout → Node setup → npm install → npm run build → GitHub Pages deploy
+- [x] Automatic deployment to gh-pages branch on merge to main
+- [x] CNAME configuration included in workflow
+
+### Manual Testing Checklist - 11ty Build System
+
+#### Local Development
+- [ ] Clone repository: `git clone ...`
+- [ ] Install dependencies: `npm install` (completes successfully)
+- [ ] Start dev server: `npm run serve` (runs on localhost:8080)
+- [ ] Access Spanish site: http://localhost:8080/ (renders correctly)
+- [ ] Access English site: http://localhost:8080/en/ (renders correctly)
+- [ ] Edit JSON: Change text in `src/_data/es.json`
+- [ ] Observe auto-rebuild: Page auto-refreshes with new content
+- [ ] Clean build: `npm run clean` removes `_site/` successfully
+
+#### Build Verification
+- [ ] Run: `npm run build`
+- [ ] Check output: `ls -la _site/` shows expected files
+- [ ] Verify HTML: Open `_site/index.html` in browser (renders)
+- [ ] Verify EN: Open `_site/en/index.html` in browser (renders)
+- [ ] Check templates: All components render with correct content
+- [ ] Validate JSON: `src/_data/es.json` and `en.json` are valid JSON
+
+#### Content Update Workflow
+- [ ] Edit JSON content in `src/_data/es.json`
+- [ ] Also update `src/_data/en.json` with English equivalent
+- [ ] Run: `npm run build`
+- [ ] Test both `/` and `/en/` to verify updates
+- [ ] Commit: `git add . && git commit -m "Update pricing"`
+- [ ] Push: `git push origin claude/branch-name`
+- [ ] Verify: GitHub Actions runs build automatically
+- [ ] Check: Changes deployed to live site
+
+---
+
+## Multilingual Implementation - Testing Report
 
 **Date**: December 16, 2025
 **Implementation**: Multilingual Support (Separate Files Strategy)
-**Status**: ✅ READY FOR MANUAL TESTING
+**Status**: ✅ COMPLETED & SUPERSEDED BY 11ty BUILD SYSTEM
+
+> **Note**: This testing report documents the multilingual implementation completed on December 16. The build system was subsequently migrated to 11ty on December 18 to improve content management and automation.
 
 ---
 

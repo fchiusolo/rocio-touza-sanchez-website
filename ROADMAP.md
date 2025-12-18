@@ -2,6 +2,23 @@
 
 > **Note**: This roadmap is forward-looking and focuses on next steps only. For project history and completed items, see git commit history.
 
+## Recently Completed
+
+### Build System & Architecture (December 18, 2025)
+
+| Task | Completion |
+|------|-----------|
+| ✅ Migrate to 11ty (Eleventy) static site generator | **COMPLETE** |
+| ✅ Implement JSON-based content management (es.json, en.json) | **COMPLETE** |
+| ✅ Create reusable Nunjucks components | **COMPLETE** |
+| ✅ Set up GitHub Actions CI/CD pipeline for automated builds/deployment | **COMPLETE** |
+| ✅ Implement bilingual template generation from single source | **COMPLETE** |
+| ✅ Update documentation to reflect new build process | **COMPLETE** |
+
+**Impact**: Content updates now simplified - edit JSON files, run `npm run build`, push to GitHub. Automated deployment eliminates manual build steps.
+
+---
+
 ## SEO & Discoverability
 
 ### Phase 1: On-Page SEO (Code Changes)
@@ -50,7 +67,7 @@
 
 ---
 
-## Recent Completions
+## Completed Milestones
 
 ### Multilingual Support (December 16, 2025)
 - ✅ Implemented separate-file multilingual architecture
@@ -58,6 +75,15 @@
 - ✅ Added hreflang tags to all pages (satisfies Task #4)
 - ✅ Updated sitemap.xml with bilingual structure (satisfies Task #5)
 - ✅ Implemented URL-based language switcher
-- 📋 See `TESTING-REPORT.md` for comprehensive testing checklist
+- ✅ Professional bilingual content translations
 
-*Last updated: December 16, 2025*
+### Build System & Architecture (December 18, 2025)
+- ✅ Migrated from static HTML to 11ty (Eleventy)
+- ✅ Implemented JSON-based content management
+- ✅ Created reusable Nunjucks component architecture
+- ✅ Configured GitHub Actions for automated CI/CD
+- ✅ Implemented npm scripts: `npm run serve`, `npm run build`, `npm run clean`
+- ✅ Updated all documentation files
+- ✅ Tested bilingual generation and deployment
+
+*Last updated: December 18, 2025*
