@@ -222,7 +222,12 @@
     "title": "Sobre el proceso terapéutico",
     "subtitle": "Tu experiencia puede ayudar a otros a encontrar el apoyo que necesitan. Si te gustaría compartir algo de tu experiencia terapéutica actual o pasada, puedes dejar unas palabras aquí - hazlo con total libertad, es simplemente una posibilidad para quienes deseen hacerlo.",
     "ctaText": "Compartir mi experiencia",
-    "googleMapsUrl": "https://g.page/r/CRpj352A4OBHEBI/review"
+    "googleMapsAriaLabel": "Dejar reseña en Google Maps",
+    "googleMapsUrl": "https://g.page/r/CRpj352A4OBHEBI/review",
+    "doctoraliaNote": "¿Prefieres el anonimato? También puedes compartir tu experiencia en Doctoralia.",
+    "doctoraliaCtaText": "Reseña en Doctoralia",
+    "doctoraliaAriaLabel": "Dejar reseña en Doctoralia",
+    "doctoraliaUrl": "https://www.doctoralia.es/anade-opinion/rocio-touza-sanchez-4#/opinion"
   },
   "book": {
     "title": "Reserva tu sesión",
