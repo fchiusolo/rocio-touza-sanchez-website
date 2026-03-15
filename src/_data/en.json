@@ -222,7 +222,12 @@
     "title": "About the therapeutic process",
     "subtitle": "Your experience can help others find the support they need. If you'd like to share something about your current or past therapeutic experience, you can leave a few words here - do so with complete freedom, it's simply an option for those who wish to do so.",
     "ctaText": "Share my experience",
-    "googleMapsUrl": "https://g.page/r/CRpj352A4OBHEBI/review"
+    "googleMapsAriaLabel": "Leave a review on Google Maps",
+    "googleMapsUrl": "https://g.page/r/CRpj352A4OBHEBI/review",
+    "doctoraliaNote": "Prefer to stay anonymous? You can also share your experience on Doctoralia.",
+    "doctoraliaCtaText": "Review on Doctoralia",
+    "doctoraliaAriaLabel": "Leave a review on Doctoralia",
+    "doctoraliaUrl": "PLACEHOLDER_DOCTORALIA_URL"
   },
   "book": {
     "title": "Book your session",
