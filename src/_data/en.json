@@ -153,7 +153,7 @@
       "badge": "Limited availability",
       "description": "If you prefer in-person sessions, I offer a welcoming space in Barcelona. Due to limited availability, I invite you to contact me to check available slots.",
       "location": "Location",
-      "locationAddress": "Carrer de Sardenya, 326, L'Eixample, 08025 Barcelona (Sagrada Familia area)"
+      "locationAddress": "Carrer d'Alfons XII, 32, Bajo 1, Sarrià-Sant Gervasi, 08006 Barcelona"
     },
     "pricing": {
       "title": "Duration",
@@ -190,7 +190,7 @@
       },
       {
         "question": "Do you offer in-person therapy?",
-        "answer": "Yes, although online therapy is my primary modality, I also offer in-person sessions in Barcelona (Sagrada Familia area) with limited availability. If you're interested in this option, contact me to check available slots."
+        "answer": "Yes, although online therapy is my primary modality, I also offer in-person sessions in Barcelona (Sarrià-Sant Gervasi area) with limited availability. If you're interested in this option, contact me to check available slots."
       },
       {
         "question": "Is it confidential?",
