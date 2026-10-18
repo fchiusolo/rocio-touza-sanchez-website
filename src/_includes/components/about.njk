@@ -15,16 +15,42 @@
                 <h3 class="text-2xl font-playfair font-semibold text-navy mb-4 text-center">
                     {% if lang == "es" %}Formación y Credenciales{% else %}Education & Credentials{% endif %}
                 </h3>
-                <p class="text-gray-600 leading-relaxed text-center mb-4">
-                    <span>{{ t.about.credentials }}</span>
+                <p class="text-[19px] leading-[1.6] font-semibold text-navy text-center mb-8">
+                    {{ t.about.credentials }}
                 </p>
-                <div class="text-sm text-gray-500 space-y-2">
+                <div class="text-base leading-6 text-gray-600 flex flex-col gap-[14px]">
                     {% if t.about.training %}
                         {% set trainingItems = t.about.training | split("|") %}
                         {% for item in trainingItems %}
                         <p>• {{ item | trim }}</p>
                         {% endfor %}
                     {% endif %}
+                </div>
+
+                <!-- Seals -->
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-5 sm:gap-8">
+                    <img src="{{ imagePath }}images/logos/uba.png" alt="{{ t.about.seals.uba }}" class="h-12 sm:h-16 w-auto" loading="lazy">
+                    <img src="{{ imagePath }}images/logos/uab.png" alt="{{ t.about.seals.uab }}" class="h-10 sm:h-14 w-auto" loading="lazy">
+                    <img src="{{ imagePath }}images/logos/copc.png" alt="{{ t.about.seals.copc }}" class="h-12 sm:h-16 w-auto" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- In the media -->
+        <div id="en-los-medios" class="mt-[72px] pt-14 border-t border-gray-200">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-2xl font-playfair font-semibold text-navy mb-4 text-center">{{ t.about.media.title }}</h3>
+                <div class="flex flex-col gap-3">
+                    {% for article in t.about.media.articles %}
+                    <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer" class="grid grid-cols-[minmax(0,1fr)_68px] sm:grid-cols-[auto_minmax(0,1fr)_68px] items-center gap-x-5 gap-y-3 py-4 px-5 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <img src="{{ imagePath }}images/logos/la-vanguardia.png" alt="{{ t.about.media.logoAlt }}" class="col-span-2 sm:col-span-1 h-10 sm:h-14 w-auto" loading="lazy">
+                        <span class="flex flex-col gap-0.5 min-w-0">
+                            <span class="font-semibold text-navy">{{ article.title }}</span>
+                            <span class="text-sm text-gray-600">{{ article.date }}</span>
+                        </span>
+                        <span class="text-right whitespace-nowrap text-forest-green font-semibold text-sm">{{ t.about.media.readMore }} →</span>
+                    </a>
+                    {% endfor %}
                 </div>
             </div>
         </div>

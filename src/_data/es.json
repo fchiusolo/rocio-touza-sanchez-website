@@ -8,7 +8,9 @@
     "email": "rociotouzasanchez@outlook.com",
     "location": "Barcelona",
     "country": "España",
-    "countryCode": "ES"
+    "countryCode": "ES",
+    "streetAddress": "Carrer d'Alfons XII, 32, Bajo 1",
+    "postalCode": "08006"
   },
   "meta": {
     "title": "Rocío Touza Sánchez - Psicóloga Online | Terapia con Enfoque Inclusivo",
@@ -48,7 +50,29 @@
       "¡Te espero!"
     ],
     "credentials": "Psicóloga General Sanitaria (nº 33914). Máster en Investigación e Intervención Psicosocial. Sexóloga Clínica.",
-    "training": "Máster en Investigación e Intervención Psicosocial, Universitat Autònoma de Barcelona | Postgrado en Sexología Clínica, Universidad de Buenos Aires | Postgrado en Terapia Sexual Cognitivo Comportamental y Sistémica, Universidad de Buenos Aires | Postgrado en Psicoanálisis: Clínica de Adultos, Institución Fernando Ulloa | Licenciatura en Psicología, Universidad de Buenos Aires"
+    "training": "Curso EMDR Nivel I, Asociación Española de Psicología Sanitaria | Specialization Course: Psychology of Disorders Related to Trauma, Anxiety and Stress, American Psychological Association | Máster en Investigación e Intervención Psicosocial, Universitat Autònoma de Barcelona | Postgrado en Sexología Clínica, Universidad de Buenos Aires | Postgrado en Terapia Sexual Cognitivo Comportamental y Sistémica, Universidad de Buenos Aires | Postgrado en Psicoanálisis: Clínica de Adultos, Institución Fernando Ulloa | Licenciatura en Psicología, Universidad de Buenos Aires",
+    "seals": {
+      "uba": "Universidad de Buenos Aires",
+      "uab": "Universitat Autònoma de Barcelona",
+      "copc": "Sello del Col·legi Oficial de Psicologia de Catalunya"
+    },
+    "media": {
+      "title": "En los medios",
+      "readMore": "Leer",
+      "logoAlt": "La Vanguardia",
+      "articles": [
+        {
+          "title": "“Ya quedaremos”: la frase con la que los adultos vamos dejando morir nuestras amistades",
+          "date": "11 septiembre 2026",
+          "url": "https://www.lavanguardia.com/vivo/relaciones/20260911/11626135/quedaremos-frase-adultos-dejando-morir-amistades.html"
+        },
+        {
+          "title": "Terapia online: ¿es igual de efectiva que sentarse en el diván?",
+          "date": "16 julio 2022",
+          "url": "https://www.lavanguardia.com/vivo/psicologia/20220716/8390979/terapia-psicologica-online.html"
+        }
+      ]
+    }
   },
   "services": {
     "title": "Áreas de especialización",
@@ -153,7 +177,7 @@
       "badge": "Disponibilidad limitada",
       "description": "Si prefieres las sesiones en persona, ofrezco un espacio acogedor en Barcelona. Debido a la disponibilidad limitada, te invito a contactarme para consultar cupos disponibles.",
       "location": "Ubicación",
-      "locationAddress": "Carrer de Sardenya, 326, L'Eixample, 08025 Barcelona (zona Sagrada Familia)"
+      "locationAddress": "Carrer d'Alfons XII, 32, Bajo 1, Sarrià-Sant Gervasi, 08006 Barcelona"
     },
     "pricing": {
       "title": "Duración",
@@ -190,7 +214,7 @@
       },
       {
         "question": "¿Ofrecés terapia presencial?",
-        "answer": "Sí, aunque la terapia online es mi modalidad principal, también ofrezco sesiones presenciales en Barcelona (zona Sagrada Familia) con disponibilidad limitada. Si te interesa esta opción, contáctame para consultar cupos disponibles."
+        "answer": "Sí, aunque la terapia online es mi modalidad principal, también ofrezco sesiones presenciales en Barcelona con disponibilidad limitada. Si te interesa esta opción, contáctame para consultar cupos disponibles."
       },
       {
         "question": "¿Es confidencial?",

@@ -1,5 +1,10 @@
 <title>{{ t.meta.title }}</title>
 
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
 <!-- SEO Meta Tags -->
 <meta name="description" content="{{ t.meta.description }}">
 <meta name="keywords" content="{{ t.meta.keywords }}">
@@ -31,6 +36,8 @@
     "email": "{{ t.site.email }}",
     "address": {
         "@type": "PostalAddress",
+        "streetAddress": "{{ t.site.streetAddress | safe }}",
+        "postalCode": "{{ t.site.postalCode }}",
         "addressLocality": "{{ t.site.location }}",
         "addressCountry": "{{ t.site.countryCode }}"
     },
