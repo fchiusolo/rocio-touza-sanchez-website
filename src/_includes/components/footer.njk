@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="bg-navy text-white py-12">
+<footer class="bg-navy text-white pt-12 pb-12 md:pb-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-3 gap-8 mb-8">
             <div>
@@ -35,11 +35,16 @@
             </div>
         </div>
 
-        <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
-            <p class="mb-3">
-                <a href="{{ t.footer.privacyUrl }}" class="hover:text-forest-green transition">{{ t.footer.links.privacy }}</a>
-            </p>
-            <p>© {% if lang == "es" %}2024{% else %}2024{% endif %} Rocío Touza Sánchez. {{ t.footer.copyright }} | {{ t.footer.credentials }}</p>
+        <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row items-center md:justify-between gap-4 md:gap-8 text-center md:text-left text-sm text-gray-400">
+            <div class="flex flex-col gap-2">
+                <p>
+                    <a href="{{ t.footer.privacyUrl }}" class="hover:text-forest-green transition">{{ t.footer.links.privacy }}</a>
+                </p>
+                <p>© 2024 Rocío Touza Sánchez. {{ t.footer.copyright }} | {{ t.footer.credentials }}</p>
+            </div>
+            <div class="h-16 p-1.5 rounded-lg bg-white flex items-center flex-shrink-0">
+                <img src="{{ imagePath }}images/logos/copc.png" alt="{{ t.about.seals.copc }}" class="h-[52px] w-auto" loading="lazy">
+            </div>
         </div>
     </div>
 </footer>
